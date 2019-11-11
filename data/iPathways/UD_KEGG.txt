@@ -1,0 +1,164 @@
+Pathways in cancer
+MAPK signaling pathway
+Human T-cell leukemia virus 1 infection
+Axon guidance
+Kaposi sarcoma-associated herpesvirus infection
+Herpes simplex virus 1 infection
+Epstein-Barr virus infection
+Human cytomegalovirus infection
+Human papillomavirus infection
+Rap1 signaling pathway
+Human immunodeficiency virus 1 infection
+PI3K-Akt signaling pathway
+Oxytocin signaling pathway
+Systemic lupus erythematosus
+Tight junction
+cGMP-PKG signaling pathway
+Tuberculosis
+Ras signaling pathway
+Vascular smooth muscle contraction
+Antigen processing and presentation
+Th17 cell differentiation
+Staphylococcus aureus infection
+Influenza A
+Regulation of actin cytoskeleton
+Phospholipase D signaling pathway
+Th1 and Th2 cell differentiation
+Toxoplasmosis
+Proteoglycans in cancer
+NOD-like receptor signaling pathway
+Neuroactive ligand-receptor interaction
+Sphingolipid signaling pathway
+Wnt signaling pathway
+Thyroid hormone signaling pathway
+cAMP signaling pathway
+Alzheimer disease
+Viral carcinogenesis
+Adrenergic signaling in cardiomyocytes
+Chemokine signaling pathway
+Serotonergic synapse
+Dopaminergic synapse
+Retrograde endocannabinoid signaling
+Hepatocellular carcinoma
+Breast cancer
+Inflammatory bowel disease (IBD)
+Rheumatoid arthritis
+Protein processing in endoplasmic reticulum
+Cellular senescence
+Platelet activation
+Estrogen signaling pathway
+Calcium signaling pathway
+Leishmaniasis
+Colorectal cancer
+Gastric cancer
+Long-term depression
+Cholinergic synapse
+Natural killer cell mediated cytotoxicity
+Fc gamma R-mediated phagocytosis
+Neurotrophin signaling pathway
+Glutamatergic synapse
+Non-alcoholic fatty liver disease (NAFLD)
+Cushing syndrome
+Parathyroid hormone synthesis, secretion and action
+Alcoholism
+Glioma
+GnRH signaling pathway
+Hepatitis B
+HIF-1 signaling pathway
+Endocrine resistance
+Focal adhesion
+Apelin signaling pathway
+Aldosterone synthesis and secretion
+mTOR signaling pathway
+Apoptosis
+Circadian entrainment
+Thermogenesis
+Pertussis
+Non-small cell lung cancer
+Choline metabolism in cancer
+C-type lectin receptor signaling pathway
+Gap junction
+Long-term potentiation
+Insulin signaling pathway
+Melanogenesis
+NF-kappa B signaling pathway
+Complement and coagulation cascades
+Salmonella infection
+Hepatitis C
+Endometrial cancer
+Pancreatic cancer
+Chronic myeloid leukemia
+Basal cell carcinoma
+Autophagy - animal
+VEGF signaling pathway
+Fc epsilon RI signaling pathway
+Leukocyte transendothelial migration
+GABAergic synapse
+Insulin secretion
+Thyroid hormone synthesis
+Glucagon signaling pathway
+Renin secretion
+Cortisol synthesis and secretion
+EGFR tyrosine kinase inhibitor resistance
+ErbB signaling pathway
+Hippo signaling pathway
+T cell receptor signaling pathway
+Measles
+Prolactin signaling pathway
+Relaxin signaling pathway
+Salivary secretion
+Bacterial invasion of epithelial cells
+Renal cell carcinoma
+Prostate cancer
+Melanoma
+Small cell lung cancer
+PD-L1 expression and PD-1 checkpoint pathway in cancer
+Fluid shear stress and atherosclerosis
+Cytokine-cytokine receptor interaction
+Olfactory transduction
+FoxO signaling pathway
+Oocyte meiosis
+AMPK signaling pathway
+ECM-receptor interaction
+JAK-STAT signaling pathway
+TNF signaling pathway
+Gastric acid secretion
+Insulin resistance
+AGE-RAGE signaling pathway in diabetic complications
+RNA transport
+Mitophagy - animal
+Notch signaling pathway
+TGF-beta signaling pathway
+Morphine addiction
+Longevity regulating pathway
+Cell cycle
+Autophagy - other
+B cell receptor signaling pathway
+Circadian rhythm
+Toll-like receptor signaling pathway
+Endocrine and other factor-regulated calcium reabsorption
+Taste transduction
+Shigellosis
+Amphetamine addiction
+Necroptosis
+Osteoclast differentiation
+Vibrio cholerae infection
+Epithelial cell signaling in Helicobacter pylori infection
+Pathogenic Escherichia coli infection
+Chagas disease (American trypanosomiasis)
+Amoebiasis
+Acute myeloid leukemia
+Adipocytokine signaling pathway
+Type II diabetes mellitus
+Hedgehog signaling pathway
+Phototransduction
+Cocaine addiction
+Amyotrophic lateral sclerosis (ALS)
+Malaria
+Hippo signaling pathway - multiple species
+Regulation of lipolysis in adipocytes
+Longevity regulating pathway - multiple species
+Legionellosis
+African trypanosomiasis
+Bladder cancer
+Central carbon metabolism in cancer

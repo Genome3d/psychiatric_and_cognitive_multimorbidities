@@ -1,0 +1,135 @@
+Human T-cell leukemia virus 1 infection
+Herpes simplex virus 1 infection
+Epstein-Barr virus infection
+Antigen processing and presentation
+Influenza A
+Systemic lupus erythematosus
+Human papillomavirus infection
+Th17 cell differentiation
+MAPK signaling pathway
+Th1 and Th2 cell differentiation
+Leishmaniasis
+Toxoplasmosis
+Staphylococcus aureus infection
+Tuberculosis
+Inflammatory bowel disease (IBD)
+Cellular senescence
+Pathways in cancer
+Kaposi sarcoma-associated herpesvirus infection
+PI3K-Akt signaling pathway
+Human cytomegalovirus infection
+Tight junction
+Adrenergic signaling in cardiomyocytes
+Natural killer cell mediated cytotoxicity
+cAMP signaling pathway
+Progesterone-mediated oocyte maturation
+Rap1 signaling pathway
+cGMP-PKG signaling pathway
+Thermogenesis
+Oxytocin signaling pathway
+Human immunodeficiency virus 1 infection
+Sphingolipid signaling pathway
+Oocyte meiosis
+Apelin signaling pathway
+Glutamatergic synapse
+Calcium signaling pathway
+Phospholipase D signaling pathway
+Proteoglycans in cancer
+GnRH signaling pathway
+FoxO signaling pathway
+Vascular smooth muscle contraction
+Wnt signaling pathway
+Neurotrophin signaling pathway
+Regulation of actin cytoskeleton
+Insulin signaling pathway
+Glucagon signaling pathway
+Cushing syndrome
+mTOR signaling pathway
+Apoptosis
+Alzheimer disease
+Alcoholism
+Pertussis
+Hepatitis C
+Pancreatic cancer
+Chronic myeloid leukemia
+Acute myeloid leukemia
+Ras signaling pathway
+Olfactory transduction
+Longevity regulating pathway
+Endocrine resistance
+Chemokine signaling pathway
+Cell cycle
+Focal adhesion
+Platelet activation
+Fc gamma R-mediated phagocytosis
+Long-term potentiation
+Serotonergic synapse
+Insulin resistance
+Non-alcoholic fatty liver disease (NAFLD)
+Endocrine and other factor-regulated calcium reabsorption
+Dopaminergic synapse
+Parathyroid hormone synthesis, secretion and action
+Relaxin signaling pathway
+Prostate cancer
+Hepatocellular carcinoma
+Small cell lung cancer
+Non-small cell lung cancer
+Breast cancer
+Gastric cancer
+Axon guidance
+NOD-like receptor signaling pathway
+Long-term depression
+Adipocytokine signaling pathway
+Hepatitis B
+HIF-1 signaling pathway
+C-type lectin receptor signaling pathway
+PPAR signaling pathway
+Platinum drug resistance
+Fanconi anemia pathway
+Autophagy - animal
+AMPK signaling pathway
+VEGF signaling pathway
+Gap junction
+IL-17 signaling pathway
+B cell receptor signaling pathway
+Fc epsilon RI signaling pathway
+TNF signaling pathway
+Circadian rhythm
+Estrogen signaling pathway
+Melanogenesis
+Thyroid hormone signaling pathway
+Aldosterone-regulated sodium reabsorption
+Cocaine addiction
+Shigellosis
+EGFR tyrosine kinase inhibitor resistance
+ErbB signaling pathway
+Longevity regulating pathway - multiple species
+Amphetamine addiction
+Notch signaling pathway
+T cell receptor signaling pathway
+Measles
+Prolactin signaling pathway
+Endometrial cancer
+Glioma
+Melanoma
+Bladder cancer
+Central carbon metabolism in cancer
+Choline metabolism in cancer
+PD-L1 expression and PD-1 checkpoint pathway in cancer
+Antifolate resistance
+Cytokine-cytokine receptor interaction
+Cytosolic DNA-sensing pathway
+RIG-I-like receptor signaling pathway
+Toll-like receptor signaling pathway
+AGE-RAGE signaling pathway in diabetic complications
+NF-kappa B signaling pathway
+TGF-beta signaling pathway
+Osteoclast differentiation
+Hippo signaling pathway
+Bacterial invasion of epithelial cells
+Vibrio cholerae infection
+Epithelial cell signaling in Helicobacter pylori infection
+Chagas disease (American trypanosomiasis)
+Colorectal cancer
+Renal cell carcinoma
+Fluid shear stress and atherosclerosis

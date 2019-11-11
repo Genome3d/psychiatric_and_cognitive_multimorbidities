@@ -1,0 +1,1107 @@
+Gene_Name	Drug_Name	Interaction_Type	Source	Gene_Categories
+EARS2	L-Glutamic Acid		DrugBank	Druggable genome
+HLA-A	CARBAMAZEPINE		PharmGKB	Cell surface,druggable genome
+HLA-A	Carbamazepine		FDA	Cell surface,druggable genome
+HLA-A	3-Indolebutyric Acid		DrugBank	Cell surface,druggable genome
+CYP21A2	Ketoconazole		DrugBank	Cytochrome p450,druggable genome
+C4A	Immune Globulin Human	binder	DrugBank	Druggable genome,protease,protease inhibitor
+CCHCR1	NEVIRAPINE		PharmGKB	
+LPAR2	2-OLEOYL-LPA	agonist	GuideToPharmacologyInteractions	Cell surface,druggable genome,g protein coupled receptor,phospholipase
+LPAR2	FARNESYL DIPHOSPHATE	agonist	GuideToPharmacologyInteractions	Cell surface,druggable genome,g protein coupled receptor,phospholipase
+LPAR2	AM966	antagonist	GuideToPharmacologyInteractions	Cell surface,druggable genome,g protein coupled receptor,phospholipase
+LPAR2	KI16425	antagonist	GuideToPharmacologyInteractions	Cell surface,druggable genome,g protein coupled receptor,phospholipase
+LPAR2	CAFFEINE		NCI	Cell surface,druggable genome,g protein coupled receptor,phospholipase
+LPAR2	MORPHINE		NCI	Cell surface,druggable genome,g protein coupled receptor,phospholipase
+LPAR2	OCTREOTIDE		NCI	Cell surface,druggable genome,g protein coupled receptor,phospholipase
+HAPLN4	Hyaluronic acid	binder	DrugBank	Druggable genome
+CACNA1C	Isradipine	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	ISRADIPINE		TEND	Druggable genome,ion channel,transporter
+CACNA1C	ISRADIPINE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CACNA1C	ISRADIPINE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	Nimodipine	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	NIMODIPINE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	Nisoldipine	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	NISOLDIPINE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	NISOLDIPINE	gating inhibitor	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+CACNA1C	Cinnarizine	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	Magnesium Sulfate		DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	VERAPAMIL		TEND	Druggable genome,ion channel,transporter
+CACNA1C	Verapamil	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	VERAPAMIL	channel blocker	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+CACNA1C	VERAPAMIL		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CACNA1C	Felodipine	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	FELODIPINE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CACNA1C	FELODIPINE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	Nitrendipine	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	Nifedipine	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	NIFEDIPINE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	DILTIAZEM	channel blocker	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+CACNA1C	MIBEFRADIL	channel blocker	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+CACNA1C	Mibefradil	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	PB2+	channel blocker	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+CACNA1C	Dronedarone		DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	Clevidipine		DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	CLEVIDIPINE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CACNA1C	CLEVIDIPINE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	Nilvadipine	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	Drotaverine	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CACNA1C	CELECOXIB		PharmGKB	Druggable genome,ion channel,transporter
+CACNA1C	IBUTILIDE		TEND	Druggable genome,ion channel,transporter
+CACNA1C	IBUTILIDE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CACNA1C	NICARDIPINE		TEND	Druggable genome,ion channel,transporter
+CACNA1C	NICARDIPINE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CACNA1C	AMLODIPINE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CACNA1C	BEPRIDIL HYDROCHLORIDE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	GABAPENTIN	modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	GABAPENTIN ENACARBIL	modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	AZD1305	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	IMAGABALIN	modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	DRONEDARONE HYDROCHLORIDE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	AMLODIPINE MALEATE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	PREGABALIN	modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	ATAGABALIN	modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	ELPETRIGINE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	VERAPAMIL HYDROCHLORIDE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	DILTIAZEM MALATE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	AMLODIPINE BESYLATE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	NICARDIPINE HYDROCHLORIDE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA1C	DILTIAZEM HYDROCHLORIDE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+MICA	CARBAMAZEPINE		PharmGKB	Cell surface
+AS3MT	ARSENITE		PharmGKB	
+FADS2	Alpha-Linolenic Acid	ligand	DrugBank	
+FADS1	Alpha-Linolenic Acid	ligand	DrugBank	
+FADS1	Icosapent	agonist	DrugBank	
+CTSF	COMPOUND (R)-26 [PMID: 22686657]	inhibitor	GuideToPharmacologyInteractions	Druggable genome,protease
+CTSF	[1-(1-Benzyl-3-Hydroxy-2-Oxo-Propylcarbamoyl)-2-Phenyl-Ethyl]-Carbamic Acid Benzyl Ester		DrugBank	Druggable genome,protease
+HLA-DRB1	LYM-1		ChemblInteractions	Cell surface,druggable genome
+HLA-DRB1	Glatiramer Acetate	binder	DrugBank	Cell surface,druggable genome
+HLA-DRB1	Lapatinib		FDA	Cell surface,druggable genome
+HLA-DRA	NIVOLUMAB		CIViC	Cell surface,druggable genome
+HLA-DRA	PEMBROLIZUMAB		CIViC	Cell surface,druggable genome
+HLA-DRA	ATEZOLIZUMAB		CIViC	Cell surface,druggable genome
+HLA-DQB1	AMOXICILLIN		PharmGKB	
+HLA-DQB1	CLAVULANATE		PharmGKB	
+HLA-DQA1	Lapatinib		FDA	
+HLA-DQA1	INTERFERON BETA-1A		PharmGKB	
+HLA-DQA1	INTERFERON BETA-1B		PharmGKB	
+BRD2	RVX 208	antagonist	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase
+BRD2	BIC1	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase
+BRD2	COMPOUND 4D [PMID: 21851057]	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase
+BRD2	GW841819X	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase
+BRD2	I-BET151	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase
+BRD2	I-BET-762	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase
+BRD2	LY 294002	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase
+BRD2	PMA		NCI	Druggable genome,kinase,serine threonine kinase
+MMP16	Marimastat	inhibitor	DrugBank	Cell surface,druggable genome,neutral zinc metallopeptidase,protease
+MMP16	Batimastat		DrugBank	Cell surface,druggable genome,neutral zinc metallopeptidase,protease
+MMP16	ILOMASTAT	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome,neutral zinc metallopeptidase,protease
+MMP16	SL422	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome,neutral zinc metallopeptidase,protease
+NT5C2	Adenosine triphosphate		DrugBank	Drug metabolism,kinase
+NT5C2	Ribavirin	inducer	DrugBank	Drug metabolism,kinase
+NT5C2	6-THIOGUANINE		CIViC	Drug metabolism,kinase
+NT5C2	6-MERCAPTOPURINE		CIViC	Drug metabolism,kinase
+CHRNA2	METOCURINE IODIDE	antagonist	TTD	Druggable genome,ion channel,transporter
+CHRNA2	Metocurine Iodide	antagonist	DrugBank	Druggable genome,ion channel,transporter
+CHRNA2	METOCURINE IODIDE		TEND	Druggable genome,ion channel,transporter
+CHRNA2	METOCURINE IODIDE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	Gallamine Triethiodide	antagonist	DrugBank	Druggable genome,ion channel,transporter
+CHRNA2	GALLAMINE TRIETHIODIDE		TEND	Druggable genome,ion channel,transporter
+CHRNA2	GALLAMINE TRIETHIODIDE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	Mecamylamine	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CHRNA2	Procaine	antagonist	DrugBank	Druggable genome,ion channel,transporter
+CHRNA2	Atracurium besylate	inhibitor	DrugBank	Druggable genome,ion channel,transporter
+CHRNA2	Doxacurium chloride	antagonist	DrugBank	Druggable genome,ion channel,transporter
+CHRNA2	DOXACURIUM CHLORIDE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	DOXACURIUM CHLORIDE	antagonist	TTD	Druggable genome,ion channel,transporter
+CHRNA2	DOXACURIUM CHLORIDE		TEND	Druggable genome,ion channel,transporter
+CHRNA2	TUBOCURARINE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	Tubocurarine	antagonist	DrugBank	Druggable genome,ion channel,transporter
+CHRNA2	TUBOCURARINE		TEND	Druggable genome,ion channel,transporter
+CHRNA2	Mivacurium	antagonist	DrugBank	Druggable genome,ion channel,transporter
+CHRNA2	MIVACURIUM		TEND	Druggable genome,ion channel,transporter
+CHRNA2	MIVACURIUM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	Decamethonium	partial agonist	DrugBank	Druggable genome,ion channel,transporter
+CHRNA2	DECAMETHONIUM	antagonist	TTD	Druggable genome,ion channel,transporter
+CHRNA2	DECAMETHONIUM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	DECAMETHONIUM		TEND	Druggable genome,ion channel,transporter
+CHRNA2	Metocurine	antagonist	DrugBank	Druggable genome,ion channel,transporter
+CHRNA2	METOCURINE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	METOCURINE		TEND	Druggable genome,ion channel,transporter
+CHRNA2	METOCURINE	antagonist	TTD	Druggable genome,ion channel,transporter
+CHRNA2	Pipecuronium	antagonist	DrugBank	Druggable genome,ion channel,transporter
+CHRNA2	PIPECURONIUM		TEND	Druggable genome,ion channel,transporter
+CHRNA2	PIPECURONIUM	antagonist	TTD	Druggable genome,ion channel,transporter
+CHRNA2	PIPECURONIUM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	[125I]EPIBATIDINE	agonist	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+CHRNA2	[3H]EPIBATIDINE	agonist	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+CHRNA2	CP-601927	agonist	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+CHRNA2	HEXAMETHONIUM	channel blocker	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+CHRNA2	ATRACURIUM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	ATRACURIUM		TEND	Druggable genome,ion channel,transporter
+CHRNA2	CISATRACURIUM BESYLATE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	CISATRACURIUM BESYLATE		TEND	Druggable genome,ion channel,transporter
+CHRNA2	DOXACURIUM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	DOXACURIUM		TEND	Druggable genome,ion channel,transporter
+CHRNA2	CARBACHOL	antagonist	TTD	Druggable genome,ion channel,transporter
+CHRNA2	ROCURONIUM	antagonist	TTD	Druggable genome,ion channel,transporter
+CHRNA2	ROCURONIUM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	ROCURONIUM		TEND	Druggable genome,ion channel,transporter
+CHRNA2	PANCURONIUM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	PANCURONIUM		TEND	Druggable genome,ion channel,transporter
+CHRNA2	VECURONIUM	antagonist	TTD	Druggable genome,ion channel,transporter
+CHRNA2	GANTACURIUM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	NICOTINE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	NICOTINE		TEND	Druggable genome,ion channel,transporter
+CHRNA2	BIPERIDEN		TEND	Druggable genome,ion channel,transporter
+CHRNA2	BIPERIDEN		TdgClinicalTrial	Druggable genome,ion channel,transporter
+CHRNA2	LEVALLORPHAN	antagonist	TTD	Druggable genome,ion channel,transporter
+POU5F1	ETHANOL		NCI	
+ARL3	Guanosine-5'-Diphosphate		DrugBank	
+FLOT1	CARBAMAZEPINE		PharmGKB	
+VLDLR	Lauric Acid		DrugBank	Kinase,transporter
+EPHX2	N-Cyclohexyl-N'-(4-Iodophenyl)Urea		DrugBank	Drug metabolism,druggable genome
+EPHX2	N-Cyclohexyl-N'-Decylurea		DrugBank	Drug metabolism,druggable genome
+EPHX2	N-Cyclohexyl-N'-(Propyl)Phenyl Urea		DrugBank	Drug metabolism,druggable genome
+EPHX2	N-[(CYCLOHEXYLAMINO)CARBONYL]GLYCINE		DrugBank	Drug metabolism,druggable genome
+EPHX2	4-{[(CYCLOHEXYLAMINO)CARBONYL]AMINO}BUTANOIC ACID		DrugBank	Drug metabolism,druggable genome
+EPHX2	6-{[(CYCLOHEXYLAMINO)CARBONYL]AMINO}HEXANOIC ACID		DrugBank	Drug metabolism,druggable genome
+EPHX2	AR9281		TdgClinicalTrial	Drug metabolism,druggable genome
+PBRM1	Everolimus		CGI	Clinically actionable
+PSEN1	GSI-136		TdgClinicalTrial	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	PMA		NCI	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	BMS-708163		TdgClinicalTrial	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	AVAGACESTAT	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	AVAGACESTAT	inhibitor	ChemblInteractions	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	BEGACESTAT	inhibitor	ChemblInteractions	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	BEGACESTAT	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	ELND006	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	SCH-900229	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	SEMAGACESTAT	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	SEMAGACESTAT		TdgClinicalTrial	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	SEMAGACESTAT	inhibitor	ChemblInteractions	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	BMS-299897		TdgClinicalTrial	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	E2012		TdgClinicalTrial	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	PF03084014	inhibitor	TALC	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+PSEN1	TARENFLURBIL	modulator	ChemblInteractions	Cell surface,druggable genome,ion channel,kinase,protease,serine threonine kinase,transporter,tyrosine kinase
+MCCC1	Biotin		DrugBank	
+PSMA6	BORTEZOMIB	inhibitor	MyCancerGenome	Druggable genome,protease,transcription factor binding,tumor suppressor
+PSMA6	BORTEZOMIB	inhibitor	ChemblInteractions	Druggable genome,protease,transcription factor binding,tumor suppressor
+PSMA6	OPROZOMIB	inhibitor	ChemblInteractions	Druggable genome,protease,transcription factor binding,tumor suppressor
+PSMA6	MARIZOMIB	inhibitor	ChemblInteractions	Druggable genome,protease,transcription factor binding,tumor suppressor
+PSMA6	CARFILZOMIB	inhibitor	ChemblInteractions	Druggable genome,protease,transcription factor binding,tumor suppressor
+PSMA6	CARFILZOMIB	inhibitor	MyCancerGenome	Druggable genome,protease,transcription factor binding,tumor suppressor
+PSMA6	IXAZOMIB CITRATE	inhibitor	ChemblInteractions	Druggable genome,protease,transcription factor binding,tumor suppressor
+C4B	Immune Globulin Human	binder	DrugBank	Druggable genome,protease,protease inhibitor
+GCDH	Flavin adenine dinucleotide		DrugBank	
+BRSK2	CCT244747	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase
+BRSK2	SU6656	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase
+ACHE	DONEPEZIL HYDROCHLORIDE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	ECHOTHIOPHATE IODIDE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	EDROPHONIUM	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome
+ACHE	EDROPHONIUM		TEND	Cell surface,druggable genome
+ACHE	Edrophonium	inhibitor	DrugBank	Cell surface,druggable genome
+ACHE	EDROPHONIUM		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	EDROPHONIUM	inhibitor	TTD	Cell surface,druggable genome
+ACHE	Choline	product of	DrugBank	Cell surface,druggable genome
+ACHE	Tacrine	inhibitor	DrugBank	Cell surface,druggable genome
+ACHE	TACRINE		TEND	Cell surface,druggable genome
+ACHE	TACRINE		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	TACRINE	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome
+ACHE	Dipivefrin		DrugBank	Cell surface,druggable genome
+ACHE	Gallamine Triethiodide	inhibitor	DrugBank	Cell surface,druggable genome
+ACHE	ISOFLUROPHATE	inhibitor	TTD	Cell surface,druggable genome
+ACHE	Isoflurophate	inhibitor	DrugBank	Cell surface,druggable genome
+ACHE	ISOFLUROPHATE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	Minaprine	inhibitor	DrugBank	Cell surface,druggable genome
+ACHE	Demecarium	inhibitor	DrugBank	Cell surface,druggable genome
+ACHE	PHYSOSTIGMINE		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	Physostigmine	inhibitor	DrugBank	Cell surface,druggable genome
+ACHE	PHYSOSTIGMINE	inhibitor	TTD	Cell surface,druggable genome
+ACHE	PHYSOSTIGMINE		TEND	Cell surface,druggable genome
+ACHE	PHYSOSTIGMINE	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome
+ACHE	AMBENONIUM	inhibitor	TTD	Cell surface,druggable genome
+ACHE	Ambenonium	inhibitor	DrugBank	Cell surface,druggable genome
+ACHE	AMBENONIUM		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	AMBENONIUM		TEND	Cell surface,druggable genome
+ACHE	Tubocurarine	inhibitor	DrugBank	Cell surface,druggable genome
+ACHE	Decamethonium	inhibitor	DrugBank	Cell surface,druggable genome
+ACHE	Propidium		DrugBank	Cell surface,druggable genome
+ACHE	(4ar,6s,8ar)-11-[8-(1,3-Dioxo-1,3-Dihydro-2h-Isoindol-2-Yl)Octyl]-6-Hydroxy-3-Methoxy-5,6,9,10-Tetrahydro-4ah-[1]Benzofuro[3a,3,2-Ef][2]Benzazepin-11-Ium		DrugBank	Cell surface,druggable genome
+ACHE	3,8-Diamino-6-Phenyl-5-[6-[1-[2-[(1,2,3,4-Tetrahydro-9-Acridinyl)Amino]Ethyl]-1h-1,2,3-Triazol-5-Yl]Hexyl]-Phenanthridinium		DrugBank	Cell surface,druggable genome
+ACHE	Huperzine B		DrugBank	Cell surface,druggable genome
+ACHE	M-(N,N,N-Trimethylammonio)-2,2,2-Trifluoro-1,1-Dihydroxyethylbenzene		DrugBank	Cell surface,druggable genome
+ACHE	3-Chloro-9-Ethyl-6,7,8,9,10,11-Hexahydro-7,11-Methanocycloocta[B]Quinolin-12-Amine		DrugBank	Cell surface,druggable genome
+ACHE	TACRINE(8)-4-AMINOQUINOLINE		DrugBank	Cell surface,druggable genome
+ACHE	Zanapezil		DrugBank	Cell surface,druggable genome
+ACHE	Huperzine A		DrugBank	Cell surface,druggable genome
+ACHE	Huperzine-A		DrugBank	Cell surface,druggable genome
+ACHE	HUPERZINE-A		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	Phenserine		DrugBank	Cell surface,druggable genome
+ACHE	PHENSERINE		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	1-BENZYL-4-[(5,6-DIMETHOXY-1-INDANON-2-YL)METHYL]PIPERIDINE		DrugBank	Cell surface,druggable genome
+ACHE	1-[3-({[(4-AMINO-5-FLUORO-2-METHYLQUINOLIN-3-YL)METHYL]THIO}METHYL)PHENYL]-2,2,2-TRIFLUOROETHANE-1,1-DIOL		DrugBank	Cell surface,druggable genome
+ACHE	1-ETHOXY-2-(2-ETHOXYETHOXY)ETHANE		DrugBank	Cell surface,druggable genome
+ACHE	Dimetacrine	antagonist	DrugBank	Cell surface,druggable genome
+ACHE	6-AMINONICOTINAMIDE		NCI	Cell surface,druggable genome
+ACHE	6-THIOGUANINE		NCI	Cell surface,druggable genome
+ACHE	8-AZAGUANINE		NCI	Cell surface,druggable genome
+ACHE	ECHOTHIOPHATE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	ECHOTHIOPHATE	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome
+ACHE	NEOSTIGMINE METHYLSULFATE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	HEXAFLUORENIUM BROMIDE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	PYRIDOSTIGMINE BROMIDE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	GALANTAMINE HYDROBROMIDE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	EDROPHONIUM CHLORIDE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	DEMECARIUM BROMIDE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	DEMECARIUM BROMIDE		TEND	Cell surface,druggable genome
+ACHE	DEMECARIUM BROMIDE		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	PRALIDOXIME CHLORIDE	activator	ChemblInteractions	Cell surface,druggable genome
+ACHE	GALANTAMINE	inhibitor	TTD	Cell surface,druggable genome
+ACHE	GALANTAMINE		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	GALANTAMINE		TEND	Cell surface,druggable genome
+ACHE	GALANTAMINE	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome
+ACHE	PYRIDOSTIGMINE	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome
+ACHE	PYRIDOSTIGMINE	inhibitor	TTD	Cell surface,druggable genome
+ACHE	PYRIDOSTIGMINE		TEND	Cell surface,druggable genome
+ACHE	PYRIDOSTIGMINE		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	RIVASTIGMINE		TEND	Cell surface,druggable genome
+ACHE	RIVASTIGMINE	inhibitor	TTD	Cell surface,druggable genome
+ACHE	RIVASTIGMINE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	RIVASTIGMINE		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	RIVASTIGMINE	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome
+ACHE	NEOSTIGMINE		TEND	Cell surface,druggable genome
+ACHE	NEOSTIGMINE	inhibitor	TTD	Cell surface,druggable genome
+ACHE	NEOSTIGMINE		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	NEOSTIGMINE	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome
+ACHE	ACOTIAMIDE		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	DONEPEZIL	inhibitor	TTD	Cell surface,druggable genome
+ACHE	DONEPEZIL		TEND	Cell surface,druggable genome
+ACHE	DONEPEZIL		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	DONEPEZIL	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome
+ACHE	AMBENONIUM CHLORIDE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	TACRINE HYDROCHLORIDE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	BETAMETHASONE		NCI	Cell surface,druggable genome
+ACHE	GALACTITOL		NCI	Cell surface,druggable genome
+ACHE	MAGNESIUM CHLORIDE		NCI	Cell surface,druggable genome
+ACHE	METHADONE		NCI	Cell surface,druggable genome
+ACHE	LATREPIRDINE		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	MALATHION	inhibitor	TTD	Cell surface,druggable genome
+ACHE	RIVASTIGMINE TARTRATE	inhibitor	ChemblInteractions	Cell surface,druggable genome
+ACHE	ITOPRIDE		TdgClinicalTrial	Cell surface,druggable genome
+ACHE	PRALIDOXIME	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome
+HCP5	ABACAVIR		PharmGKB	
+HCP5	FLUCLOXACILLIN		PharmGKB	
+ERBB2	LAPATINIB		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LAPATINIB		PharmGKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Lapatinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Lapatinib		FDA	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LAPATINIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Lapatinib	antagonist	DrugBank	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	GW2016		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Lapatinib		OncoKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LAPATINIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LAPATINIB	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LAPATINIB		ClearityFoundationBiomarkers	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LAPATINIB		TEND	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LAPATINIB	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Lapatinib		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LAPATINIB		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LAPATINIB		DoCM	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PERTUZUMAB		ClearityFoundationBiomarkers	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Pertuzumab		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Pertuzumab		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Pertuzumab		FDA	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PERTUZUMAB	antibody	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Pertuzumab	antibody	DrugBank	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Pertuzumab		OncoKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PERTUZUMAB	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PERTUZUMAB		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PERTUZUMAB	antibody	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PERTUZUMAB	antibody	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PERTUZUMAB		PharmGKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PERTUZUMAB		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PERTUZUMAB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Trastuzumab		FDA	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	HERCEPTIN		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB	antibody	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB		DoCM	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Trastuzumab	antibody	DrugBank	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB	antibody	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Trastuzumab		FDA	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Trastuzumab		OncoKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB		PharmGKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB	antibody	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB	antibody	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB		ClearityFoundationClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB		ClearityFoundationBiomarkers	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Trastuzumab		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Trastuzumab		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	trastuzumab		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MARGETUXIMAB	antibody	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MGAH22		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MGAH22		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MARGETUXIMAB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ACALABRUTINIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AEE788	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AEE788	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AEE788		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AEE-788	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AFATINIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Afatinib	inhibitor	DrugBank	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Afatinib		OncoKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AFATINIB	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AFATINIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AFATINIB		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BIBW 2992	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AFATINIB	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BIBW 2992	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Afatinib		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AFATINIB		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Afatinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BMS-599626	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AC480		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BMS-599626	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BMS-599626	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BMS-599626	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AC480		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AC-480	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BMS-690514		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BMS-690514	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BMS-690514	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BMS-690514	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BMS-690514	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CANERTINIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CANERTINIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Canertinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CP-724714	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CP-724714	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CP-724714	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CUDC-101	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CUDC-101		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CUDC-101	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CUDC-101		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CUDC-101	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Dacomitinib		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	DACOMITINIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	DACOMITINIB	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	DACOMITINIB	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	DACOMITINIB		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	DACOMITINIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	DACOMITINIB		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Dacomitinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	DACOMITINIB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	FALNIDAMOL	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Ibrutinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	IBRUTINIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MUBRITINIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MUBRITINIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TAK165	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MUBRITINIB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	NERATINIB	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	NERATINIB		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Neratinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	NERATINIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Neratinib		OncoKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	NERATINIB	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	NERATINIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	HKI-272	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	NERATINIB		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Neratinib		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	NERATINIB		DoCM	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	NERATINIB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	poziotinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	POZIOTINIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	POZIOTINIB	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Poziotinib	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	SAPITINIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Sapitinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	SAPITINIB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TESEVATINIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	XL647		DrugBank	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	XL647	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	XL647	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	XL647		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	XL647		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TESEVATINIB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	IGN311		DrugBank	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	trastuzumab emtansine		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Ado-Trastuzumab Emtansine		FDA	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Ado-trastuzumab emtansine		OncoKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB EMTANSINE		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Ado-Trastuzumab Emtansine		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB EMTANSINE		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ADO-TRASTUZUMAB EMTANSINE		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Trastuzumab emtansine		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TRASTUZUMAB EMTANSINE	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Everolimus		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Everolimus		FDA	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Everolimus		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Fulvestrant		FDA	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Fulvestrant		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Palbociclib		FDA	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Palbociclib		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Palbociclib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AG 879		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TYRPHOSTIN AG 879		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ANTHRAQUINONE		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CHLORAMBUCIL		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	DEPSIPEPTIDE		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	DES		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	EMODIN		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ENU		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	EPIRUBICIN		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	FILGRASTIM		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	FLUORODEOXYURIDINE		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	FR901228		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	GEFITINIB		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	IRESSA		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	GEFITINIB	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Gefitinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	GEMCITABINE		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Gemcitabine		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	GREEN TEA POLYPHENOLS		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	HYDROCORTISONE		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	IL-12		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ISOFLAVONES		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	NITROGEN MUSTARD		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PD-98059		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	SUBEROYLANILIDE HYDROXAMIC ACID		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TAMOXIFEN		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Tamoxifen		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	URACIL		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	VITAMIN E		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AEE 788	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PAZOPANIB + TYVERB/TYKERB	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	INSM-18		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	INSM-18	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	GGF-2		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ARRY-380	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ARRY380	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ARRY-380		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ARRY-380		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Irbinitinib	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PELITINIB	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PELITINIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ADO-TRASTUZUMAB EMTANSINE	antibody	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	T-DM1		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	S-222611	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	S-222611		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	S-222611	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TAK-285	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TAK-285		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TAK-285	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TYKERB	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LAPATINIB DITOSYLATE	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LAPATINIB DITOSYLATE	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AZD8931	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BEVACIZUMAB+TRASTUZUMAB	antibody	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	GANCICLOVIR		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	R115777		NCI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Osimertinib		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AZD9291		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Rociletinib		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CO1686		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MK2206		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MK2206		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Abemaciclib		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Letrozole		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Letrozole		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Anastrozole		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Exemestane		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Exemestane		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LHRH		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Crizotinib		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Crizotinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	IRINOTECAN		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	DOCETAXEL		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Docetaxel		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CAPECITABINE		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Capecitabine		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PICTILISIB		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	GDC-0941		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CETUXIMAB		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Cetuximab		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	RAPAMYCIN (SIROLIMUS)		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PLATINUM		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MM-302		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MM-302		ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Paclitaxel		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	VARLITINIB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	varlitinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	VS-5584		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PKI-179		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ARQ092		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BKM120		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Bevacizumab		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Ponatinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Sorafenib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Pyrotinib	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Pyrotinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CH5132799		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	GDC-0032		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CUDC-907		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Ipatasertib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Copanlisib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	PF-05212384		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AZD4547		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Fluorouracil		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Leucovorin		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Oxaliplatin		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AMG 337		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	BGB-283		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Temsirolimus		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ABT-414		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Erlotinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Panitumumab		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Selumetinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	XL147		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	WZ4002		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CI-1040		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	LY411575		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AT13148		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Entinostat		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Trodusquemine		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Doxorubicin		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Cyclophosphamide		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Sunitinib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Metformin		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Vinorelbine		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	TS-1		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	lapuleucel-T		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AMG102		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Onartuzumab		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Olaparib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Seribantumab		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Ramucirumab		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AZD8055		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Vistusertib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Tivozanib		CKB	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	AFATINIB DIMALEATE	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	OSIMERTINIB MESYLATE	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Allitinib	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	JNJ-26483327	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MP-412	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	Hemay-022	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	CANERTINIB DIHYDROCHLORIDE	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	DACOMITINIB HYDRATE	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	ERTUMAXOMAB		ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	MDX-210		ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+ERBB2	VANDETANIB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tyrosine kinase
+PPP1R1B	FLUOXETINE		NCI	Histone modification,kinase,protein phosphatase,serine threonine kinase,tyrosine kinase
+PPP1R1B	ITI-007		TdgClinicalTrial	Histone modification,kinase,protein phosphatase,serine threonine kinase,tyrosine kinase
+PNMT	S-Adenosyl-L-Homocysteine		DrugBank	Druggable genome
+PNMT	1,2,3,4-Tetrahydro-Isoquinoline-7-Sulfonic Acid Amide		DrugBank	Druggable genome
+PNMT	7-Iodo-1,2,3,4-Tetrahydro-Isoquinoline		DrugBank	Druggable genome
+PNMT	8,9-Dichloro-2,3,4,5-Tetrahydro-1h-Benzo[C]Azepine		DrugBank	Druggable genome
+PNMT	LY134046	inhibitor	GuideToPharmacologyInteractions	Druggable genome
+PNMT	CIS-(1R,2S)-2-AMINO-1,2,3,4-TETRAHYDRONAPHTHALEN-1-OL		DrugBank	Druggable genome
+PNMT	(3R)-3-(FLUOROMETHYL)-7-(THIOMORPHOLIN-4-YLSULFONYL)-1,2,3,4-TETRAHYDROISOQUINOLINE		DrugBank	Druggable genome
+PNMT	(3R)-3-(FLUOROMETHYL)-N-(3,3,3-TRIFLUOROPROPYL)-1,2,3,4-TETRAHYDROISOQUINOLINE-7-SULFONAMIDE		DrugBank	Druggable genome
+PNMT	[(3R)-7-NITRO-1,2,3,4-TETRAHYDROISOQUINOLIN-3-YL]METHANOL		DrugBank	Druggable genome
+PNMT	7,8-DICHLORO-1,2,3,4-TETRAHYDROISOQUINOLINE		DrugBank	Druggable genome
+PNMT	N-(4-CHLOROPHENYL)-1,2,3,4-TETRAHYDROISOQUINOLINE-7-SULFONAMIDE		DrugBank	Druggable genome
+PNMT	TRANS-(1S,2S)-2-AMINO-1,2,3,4-TETRAHYDRONAPHTHALEN-1-OL		DrugBank	Druggable genome
+XPNPEP1	TOSEDOSTAT	inhibitor	ChemblInteractions	Druggable genome,neutral zinc metallopeptidase,protease
+MMAB	Hydroxocobalamin	other	DrugBank	
+KCNJ11	DIAZOXIDE		ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	Diazoxide	inducer	DrugBank	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	DIAZOXIDE		PharmGKB	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	THIAMYLAL		TEND	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	THIAMYLAL		TdgClinicalTrial	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	Thiamylal	inhibitor	DrugBank	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	GLIMEPIRIDE		TdgClinicalTrial	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	Glimepiride	inhibitor	DrugBank	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	GLIMEPIRIDE		NCI	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	GLIMEPIRIDE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	GLIMEPIRIDE		TEND	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	Verapamil	inhibitor	DrugBank	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	GLYBURIDE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	GLIBENCLAMIDE		TdgClinicalTrial	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	Glyburide		DrugBank	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	GLIBENCLAMIDE	inhibitor	GuideToPharmacologyInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	GLIBENCLAMIDE		TEND	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	MINOXIDIL		ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	MINOXIDIL	activator	GuideToPharmacologyInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	NICORANDIL	activator	GuideToPharmacologyInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	TOLBUTAMIDE	inhibitor	GuideToPharmacologyInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	TOLBUTAMIDE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	EGCG		NCI	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	FLECAINIDE		NCI	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	PHENTOLAMINE		NCI	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	STREPTOZOTOCIN		NCI	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	SARAKALIM		ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	CHLORPROPAMIDE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	TOLBUTAMIDE SODIUM, STERILE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	GLIPIZIDE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	ACETOHEXAMIDE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	TOLAZAMIDE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	REPAGLINIDE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	REPAGLINIDE		PharmGKB	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	REPAGLINIDE		TEND	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	NATEGLINIDE		TEND	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	NATEGLINIDE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	LEVOSIMENDAN		TdgClinicalTrial	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	MITIGLINIDE		TEND	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	NAMINIDIL		ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNJ11	PINACIDIL HYDRATE		ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+PLK1	Cafusertib	inhibitor	ChemblInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	NMS-P937	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	NMS-1286937	inhibitor	ChemblInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	NMS-1286937	inhibitor	MyCancerGenome	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	NMS1286937	inhibitor	TALC	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	TAK-960	inhibitor	ChemblInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	VOLASERTIB	inhibitor	ChemblInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	VOLASERTIB	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	VOLASERTIB	inhibitor	TALC	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	VOLASERTIB	inhibitor	MyCancerGenome	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	BI 6727	inhibitor	TTD	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	3-[3-chloro-5-(5-{[(1S)-1-phenylethyl]amino}isoxazolo[5,4-c]pyridin-3-yl)phenyl]propan-1-ol		DrugBank	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	1-[5-methyl-2-(trifluoromethyl)furan-3-yl]-3-[(2Z)-5-(2-{[6-(1H-1,2,4-triazol-3-ylamino)pyrimidin-4-yl]amino}ethyl)-1,3-thiazol-2(3H)-ylidene]urea		DrugBank	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	(1S,6BR,9AS,11R,11BR)-9A,11B-DIMETHYL-1-[(METHYLOXY)METHYL]-3,6,9-TRIOXO-1,6,6B,7,8,9,9A,10,11,11B-DECAHYDRO-3H-FURO[4,3,2-DE]INDENO[4,5-H][2]BENZOPYRAN-11-YL ACETATE		DrugBank	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	WORTMANNIN		NCI	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	BI2536	inhibitor	MyCancerGenome	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	BI-2536	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	BI-2536	inhibitor	TALC	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	BI 2536	inhibitor	TTD	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	BI-2536	inhibitor	ChemblInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	COMPOUND 2 [PMID: 19097784]	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	GSK579289A	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	HMN-214	inhibitor	ChemblInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	HMN-214	inhibitor	TTD	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	MK-1496	inhibitor	ChemblInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	ON 019190.NA	inhibitor	TTD	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	LC-445	inhibitor	TTD	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	GSK461364	inhibitor	TALC	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	GSK461364	inhibitor	MyCancerGenome	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	GSK461364	inhibitor	TTD	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	GSK461364	inhibitor	TTD	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	GSK-461364	inhibitor	ChemblInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	DAP-81	inhibitor	TTD	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	RIGOSERTIB		TdgClinicalTrial	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+PLK1	CYC-800	inhibitor	TTD	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+ADCY2	Colforsin		DrugBank	Druggable genome,kinase
+DEPTOR	AZD8055	inhibitor	MyCancerGenome	Kinase
+DEPTOR	OSI-027	inhibitor	MyCancerGenome	Kinase
+DEPTOR	MLN0128	inhibitor	MyCancerGenome	Kinase
+HLA-B	CARBAMAZEPINE		NCI	Cell surface,druggable genome
+HLA-B	CARBAMAZEPINE		PharmGKB	Cell surface,druggable genome
+HLA-B	Carbamazepine		FDA	Cell surface,druggable genome
+HLA-B	THALIDOMIDE		NCI	Cell surface,druggable genome
+HLA-B	ABACAVIR		PharmGKB	Cell surface,druggable genome
+HLA-B	Abacavir		FDA	Cell surface,druggable genome
+HLA-B	Pazopanib		FDA	Cell surface,druggable genome
+HLA-B	Oxcarbazepine		FDA	Cell surface,druggable genome
+HLA-B	Phenytoin		FDA	Cell surface,druggable genome
+HLA-DRB5	1D09C3		TdgClinicalTrial	Druggable genome
+UNG	4-[(1E,7E)-8-(2,6-DIOXO-1,2,3,6-TETRAHYDROPYRIMIDIN-4-YL)-3,6-DIOXA-2,7-DIAZAOCTA-1,7-DIEN-1-YL]BENZOIC ACID		DrugBank	Dna repair
+UNG	3-[(1E,7E)-8-(2,6-dioxo-1,2,3,6-tetrahydropyrimidin-4-yl)-3,6-dioxa-2,7-diazaocta-1,7-dien-1-yl]benzoic acid		DrugBank	Dna repair
+NDUFA13	NADH		DrugBank	Protease
+NDUFA13	NV-128	inhibitor	ChemblInteractions	Protease
+NDUFA13	METFORMIN HYDROCHLORIDE	inhibitor	ChemblInteractions	Protease
+NDUFA13	ME-344	inhibitor	ChemblInteractions	Protease
+CDK6	AT-7519	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	AT-7519	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	CID 5330286		ClearityFoundationClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	PALBOCICLIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	PD 0332991	inhibitor	TALC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	PALBOCICLIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	Palbociclib	Inhibitor	DrugBank	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	PALBOCICLIB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	PALBOCICLIB	inhibitor	CancerCommons	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	PD-0332991	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	PD-0332991	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	PD0332991	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	ABEMACICLIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	CS1229		ClearityFoundationClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	LY2835219	inhibitor	CancerCommons	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	ABEMACICLIB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	G1T28	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	RGB-286638	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	ALVOCIDIB		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	ALVOCIDIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	Flavopiridol		DrugBank	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	ALVOCIDIB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	(2S)-2-({6-[(3-amino-5-chlorophenyl)amino]-9-isopropyl-9H-purin-2-yl}amino)-3-methylbutan-1-ol		DrugBank	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	3,7,3',4'-TETRAHYDROXYFLAVONE		DrugBank	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	RIBOCICLIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	LEE011	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	Ribociclib	antagonist,inhibitor	DrugBank	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	LEE011		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	Ribociclib	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	LEE011		CGI	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	AZD-5438	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	G1T28-1	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	RIBOCICLIB SUCCINATE	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	CC-10004	inhibitor	TTD	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	Roniciclib	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	PHA-793887	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	(7S)-HYDROXYL-STAUROSPORINE	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+CDK6	FULVESTRANT		CIViC	Clinically actionable,druggable genome,kinase,serine threonine kinase,tumor suppressor
+GABRG1	TEMAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	Temazepam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	TEMAZEPAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	TEMAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	Adinazolam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	ADINAZOLAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	ADINAZOLAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	Halazepam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	HALAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	HALAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	HALAZEPAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	Diazepam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	DIAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	DIAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	DIAZEPAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	OXAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	Oxazepam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	OXAZEPAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	OXAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	TRIAZOLAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	TRIAZOLAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	Triazolam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	TRIAZOLAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	ESTAZOLAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	Estazolam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	ESTAZOLAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	ESTAZOLAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	Bromazepam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	BROMAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	BROMAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	Clotiazepam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	CLOTIAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	CLOTIAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	FLUDIAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	Fludiazepam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	FLUDIAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	Ketazolam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	PRAZEPAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	Prazepam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	PRAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	PRAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	Quazepam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	QUAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	QUAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	QUAZEPAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	CINOLAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	CINOLAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	Cinolazepam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	NITRAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	Nitrazepam	potentiator	DrugBank	Druggable genome,ion channel,transporter
+GABRG1	NITRAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	METHOXYFLURANE		ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	FLUMAZENIL		ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	CLORAZEPATE DIPOTASSIUM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	CHLORDIAZEPOXIDE	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	CHLORDIAZEPOXIDE		TEND	Druggable genome,ion channel,transporter
+GABRG1	CHLORDIAZEPOXIDE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	ESZOPICLONE	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	MEPROBAMATE	agonist	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	CLOBAZAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	CLOBAZAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	CLOBAZAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	ALPRAZOLAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	ALPRAZOLAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	ALPRAZOLAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	BUTALBITAL	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	CLONAZEPAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	CLONAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	DESFLURANE	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	TALBUTAL	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	BUTABARBITAL SODIUM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	GLUTETHIMIDE		ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	ACAMPROSATE CALCIUM		ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	LORAZEPAM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	LORAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	LORAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	ENFLURANE		ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	METHARBITAL	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	METHYPRYLON	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	MIDAZOLAM HYDROCHLORIDE	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	PRIMIDONE	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	PROPOFOL	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	PENTOBARBITAL SODIUM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	SECOBARBITAL SODIUM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	SEVOFLURANE	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	THIAMYLAL SODIUM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	ETOMIDATE		ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	FLURAZEPAM HYDROCHLORIDE	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	HALOTHANE	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	ISOFLURANE	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	TOPIRAMATE		ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	TRICLOFOS SODIUM		ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	NG2-73		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	ADIPIPLON	partial agonist	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	Lorediplon	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	RESEQUINIL	inverse agonist	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	PF-06372865	agonist	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	MIDAZOLAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	MIDAZOLAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	CLORAZEPATE		TEND	Druggable genome,ion channel,transporter
+GABRG1	CLORAZEPATE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	FLURAZEPAM		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	FLURAZEPAM		TEND	Druggable genome,ion channel,transporter
+GABRG1	METHOHEXITAL SODIUM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	THIOPENTAL SODIUM	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	CHLORDIAZEPOXIDE HYDROCHLORIDE	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	PENTOBARBITAL	positive allosteric modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	ETHCHLORVYNOL		ChemblInteractions	Druggable genome,ion channel,transporter
+GABRG1	ETAZOLATE		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	GABOXADOL		TdgClinicalTrial	Druggable genome,ion channel,transporter
+GABRG1	OCINAPLON		TdgClinicalTrial	Druggable genome,ion channel,transporter
+KCNQ1	Indapamide	inhibitor	DrugBank	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	INDAPAMIDE		TdgClinicalTrial	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	INDAPAMIDE		TEND	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	INDAPAMIDE	blocker	TTD	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	Bepridil	inhibitor	DrugBank	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	BEPRIDIL		TEND	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	BEPRIDIL		TdgClinicalTrial	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	Azimilide		DrugBank	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	ML277	activator	GuideToPharmacologyInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	MEFENAMIC ACID	activator	GuideToPharmacologyInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	R-L3	activator	GuideToPharmacologyInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	NIFLUMIC ACID	activator	GuideToPharmacologyInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	HMR-1556	channel blocker	GuideToPharmacologyInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	XE991	channel blocker	GuideToPharmacologyInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	L735821	channel blocker	GuideToPharmacologyInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	DOLASETRON		NCI	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	CELECOXIB		PharmGKB	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	NERISPIRDINE	blocker	TTD	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	NERISPIRDINE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	RETIGABINE		TdgClinicalTrial	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	EZOGABINE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	INDOMETHACIN		TdgClinicalTrial	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	TACROLIMUS		PharmGKB	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	GUANIDINE HYDROCHLORIDE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	TEDISAMIL	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+KCNQ1	DALFAMPRIDINE	blocker	ChemblInteractions	Drug resistance,druggable genome,ion channel,transporter
+PDE3B	AMINOPHYLLINE	inhibitor	ChemblInteractions	Druggable genome
+PDE3B	3-isobutyl-1-methyl-7H-xanthine		DrugBank	Druggable genome
+PDE3B	CILOSTAMIDE	inhibitor	GuideToPharmacologyInteractions	Druggable genome
+PDE3B	CILOSTAZOL	inhibitor	GuideToPharmacologyInteractions	Druggable genome
+PDE3B	CYCLIC GMP	inhibitor	GuideToPharmacologyInteractions	Druggable genome
+PDE3B	INAMRINONE	inhibitor	GuideToPharmacologyInteractions	Druggable genome
+PDE3B	MILRINONE	inhibitor	GuideToPharmacologyInteractions	Druggable genome
+PDE3B	THEOPHYLLINE	inhibitor	ChemblInteractions	Druggable genome
+PDE3B	PENTOXIFYLLINE	inhibitor	ChemblInteractions	Druggable genome
+PDE3B	OXTRIPHYLLINE	inhibitor	ChemblInteractions	Druggable genome
+PDE3B	THEOPHYLLINE SODIUM GLYCINATE	inhibitor	ChemblInteractions	Druggable genome
+PDE3B	ANAGRELIDE HYDROCHLORIDE	inhibitor	ChemblInteractions	Druggable genome
+PDE3B	DIPYRIDAMOLE	inhibitor	ChemblInteractions	Druggable genome
+LDHB	NADH		DrugBank	Druggable genome
+LDHB	Oxamic Acid		DrugBank	Druggable genome
+CACNA2D4	PREGABALIN	modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA2D4	BEPRIDIL HYDROCHLORIDE	blocker	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA2D4	GABAPENTIN ENACARBIL	modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA2D4	ATAGABALIN	modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA2D4	IMAGABALIN	modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+CACNA2D4	CELECOXIB		PharmGKB	Druggable genome,ion channel,transporter
+CACNA2D4	GABAPENTIN	modulator	ChemblInteractions	Druggable genome,ion channel,transporter
+ASIC2	[3H]RESOLVIN D1	agonist	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+ASIC2	RESOLVIN D1	agonist	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+ASIC2	LXA4	agonist	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+ASIC2	LITHIUM		PharmGKB	Druggable genome,ion channel,transporter
+ASIC2	H+	activator	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+ASIC2	A-317567	channel blocker	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+ASIC2	AMILORIDE	channel blocker	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+ASIC2	CD2+	channel blocker	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+ASIC2	NAFAMOSTAT	channel blocker	GuideToPharmacologyInteractions	Druggable genome,ion channel,transporter
+SPTLC3	Pyridoxal Phosphate	cofactor	DrugBank	
+SPTLC3	MYRIOCIN	inhibitor	GuideToPharmacologyInteractions	
+CPQ	L-Glutamic Acid		DrugBank	Druggable genome,neutral zinc metallopeptidase,protease
+RORA	Cholesterol-Sulfate		DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+RORA	CHOLESTEROL SULPHATE	agonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+RORA	Cholesterol		DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+RORA	CHOLESTEROL	agonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+RORA	MELATONIN		NCI	Druggable genome,nuclear hormone receptor,transcription factor binding
+RORA	7-HYDROXYCHOLESTEROL	agonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PDE1A	DIPYRIDAMOLE	inhibitor	ChemblInteractions	Druggable genome
+PDE1A	Felodipine	inhibitor	DrugBank	Druggable genome
+PDE1A	Bepridil	inhibitor	DrugBank	Druggable genome
+PDE1A	CALMODULIN	activator	GuideToPharmacologyInteractions	Druggable genome
+PDE1A	CRISABOROLE	inhibitor	GuideToPharmacologyInteractions	Druggable genome
+PDE1A	VINPOCETINE	inhibitor	GuideToPharmacologyInteractions	Druggable genome
+PDE1A	VINPOCETINE	inhibitor	TTD	Druggable genome
+PDE1A	PENTOXIFYLLINE	inhibitor	ChemblInteractions	Druggable genome
+RAF1	RG-7376	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	XL-281	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	XL281		DrugBank	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	XL281	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	XL281		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	SORAFENIB		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	Sorafenib	inhibitor	DrugBank	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	SORAFENIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	Sorafenib		OncoKB	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	SORAFENIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	SORAFENIB		TEND	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	SORAFENIB	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	Sorafenib		CGI	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	REGORAFENIB	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	Regorafenib	inhibitor	DrugBank	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	REGORAFENIB	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	REGORAFENIB	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	Dabrafenib	inhibitor	DrugBank	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	CEP-32496	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	GW5074	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	L779450	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	LY3009120	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	LY-3009120	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	OSI-930	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	PLX8394	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	SB590885	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	VEMURAFENIB	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	ZM336372	inhibitor	GuideToPharmacologyInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	ARQ736	inhibitor	TALC	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	ARQ-736	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	LGX-806	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	LGX818	inhibitor	MyCancerGenome	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	MLN-2480	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	1096708-71-2	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	SORAFENIB TOSYLATE	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	SORAFENIB TOSYLATE	inhibitor	MyCancerGenomeClinicalTrial	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	SORAFENIB TOSYLATE	inhibitor	ChemblInteractions	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	CHIR-265		TdgClinicalTrial	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+RAF1	U0126		CGI	Clinically actionable,druggable genome,kinase,protease,serine threonine kinase
+PLA2G4A	Quinacrine	inhibitor	DrugBank	Druggable genome,lipase,phospholipase
+PLA2G4A	Niflumic Acid		DrugBank	Druggable genome,lipase,phospholipase
+PLA2G4A	FLURANDRENOLIDE		TEND	Druggable genome,lipase,phospholipase
+PLA2G4A	FLUOCINOLONE ACETONIDE		TEND	Druggable genome,lipase,phospholipase
+PLA2G4A	FLUNISOLIDE		TEND	Druggable genome,lipase,phospholipase
+PLA2G4A	FLUOROMETHOLONE		TEND	Druggable genome,lipase,phospholipase
+PLA2G4A	FLUOCINONIDE		TEND	Druggable genome,lipase,phospholipase
+PLA2G4A	FLUTICASONE PROPIONATE		TEND	Druggable genome,lipase,phospholipase
+PLA2G4A	MEDRYSONE		TEND	Druggable genome,lipase,phospholipase
+ITGB1	NATALIZUMAB	antibody	GuideToPharmacologyInteractions	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	NATALIZUMAB	inhibitor	ChemblInteractions	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	BIO1211	inhibitor	GuideToPharmacologyInteractions	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	R1295		TdgClinicalTrial	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	ANTITHYMOCYTE GLOBULIN		TdgClinicalTrial	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	VOLOCIXIMAB	antibody	TALC	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	VOLOCIXIMAB		TdgClinicalTrial	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	VOLOCIXIMAB	antagonist	ChemblInteractions	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	VITAXIN	antibody	TALC	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	R411	antagonist	TTD	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	FIRATEGRAST		TdgClinicalTrial	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	FIRATEGRAST	antagonist	ChemblInteractions	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	PF-04605412	antibody	TALC	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	DI17E6	inhibitor	ChemblInteractions	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+ITGB1	INTETUMUMAB	antagonist	ChemblInteractions	Cell surface,druggable genome,external side of plasma membrane,tumor suppressor
+RPS6KA2	BI-D1870	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase,serine threonine kinase,tumor suppressor
+SLC8A1	Alpha-Linolenic Acid		DrugBank	Drug resistance,exchanger,transporter
+SLC8A1	Icosapent	inhibitor	DrugBank	Drug resistance,exchanger,transporter
+ADK	Adenosine monophosphate	product of	DrugBank	Druggable genome,kinase
+ADK	Ribavirin	activator	DrugBank	Druggable genome,kinase
+ADK	7-(5-DEOXY-BETA-D-RIBOFURANOSYL)-5-IODO-7H-PYRROLO[2,3-D]PYRIMIDIN-4-AMINE		DrugBank	Druggable genome,kinase
+ADK	5-[4-(DIMETHYLAMINO)PHENYL]-6-[(6-MORPHOLIN-4-YLPYRIDIN-3-YL)ETHYNYL]PYRIMIDIN-4-AMINE		DrugBank	Druggable genome,kinase
+ADK	BLEOMYCIN		NCI	Druggable genome,kinase
+ADK	BUSULFAN		NCI	Druggable genome,kinase
+ADK	DACARBAZINE		NCI	Druggable genome,kinase
+ADK	LOMUSTINE		NCI	Druggable genome,kinase
+ADK	2&APOS;,3&APOS;-DIDEOXYINOSINE		NCI	Druggable genome,kinase
+ADK	2,3-DIDEOXYADENOSINE		NCI	Druggable genome,kinase
+ADK	A134974	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase
+ADK	ABT702	inhibitor	GuideToPharmacologyInteractions	Druggable genome,kinase
+WNK1	PP1	inhibitor	GuideToPharmacologyInteractions	Druggable genome,ion channel,kinase,serine threonine kinase,transporter,tyrosine kinase
+USP1	ML323	inhibitor	GuideToPharmacologyInteractions	Dna repair,druggable genome,protease
+NFKB1	Thalidomide	antagonist	DrugBank	Druggable genome,transcription factor binding
+NFKB1	THALIDOMIDE		TdgClinicalTrial	Druggable genome,transcription factor binding
+NFKB1	THALIDOMIDE		TEND	Druggable genome,transcription factor binding
+NFKB1	Pranlukast		DrugBank	Druggable genome,transcription factor binding
+NFKB1	SGN-30		DrugBank	Druggable genome,transcription factor binding
+NFKB1	CC-8490		DrugBank	Druggable genome,transcription factor binding
+NFKB1	Triflusal	antagonist	DrugBank	Druggable genome,transcription factor binding
+NFKB1	PG-490-88		TdgClinicalTrial	Druggable genome,transcription factor binding
+NFKB1	BARDOXOLONE		TdgClinicalTrial	Druggable genome,transcription factor binding
+NFKB1	BORTEZOMIB		ClearityFoundationClinicalTrial	Druggable genome,transcription factor binding
+SGK1	[4-(5-naphthalen-2-yl-1H-pyrrolo[2,3-b]pyridin-3-yl)phenyl]acetic acid		DrugBank	Druggable genome,ion channel,kinase,serine threonine kinase,transporter
+SGK1	4-(5-phenyl-1H-pyrrolo[2,3-b]pyridin-3-yl)benzoic acid		DrugBank	Druggable genome,ion channel,kinase,serine threonine kinase,transporter
+SGK1	SALINE		NCI	Druggable genome,ion channel,kinase,serine threonine kinase,transporter
+SGK1	GSK650394	inhibitor	GuideToPharmacologyInteractions	Druggable genome,ion channel,kinase,serine threonine kinase,transporter
+PPARD	DB-959		TdgClinicalTrial	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	DB959	agonist	ChemblInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	Icosapent	agonist	DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	Treprostinil	agonist	DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	Sulindac	negative modulator	DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	Bezafibrate	agonist	DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	(11E)-OCTADEC-11-ENOIC ACID		DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	GFT505		DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	KD3010		DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	KD3010	agonist	TTD	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	KD3010		TdgClinicalTrial	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	KD3010	agonist	ChemblInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	(2S)-2-{3-[({[2-fluoro-4-(trifluoromethyl)phenyl]carbonyl}amino)methyl]-4-methoxybenzyl}butanoic acid		DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	2-({[3-(3,4-dihydroisoquinolin-2(1H)-ylsulfonyl)phenyl]carbonyl}amino)benzoic acid		DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	3-{5-methoxy-1-[(4-methoxyphenyl)sulfonyl]-1H-indol-3-yl}propanoic acid		DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	INDEGLITAZAR	agonist	ChemblInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	{4-[3-(4-acetyl-3-hydroxy-2-propylphenoxy)propoxy]phenoxy}acetic acid		DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	L-165041	agonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	Glycerin	agonist	DrugBank	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	GW0742X	agonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	GW2433	agonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	GW501516	agonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	GW501516		TdgClinicalTrial	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	GW9578	agonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	L-783483	agonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	L-796449	agonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	TRETINOIN	agonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	GSK0660	antagonist	GuideToPharmacologyInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	ATORVASTATIN		NCI	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	ETHANOL		NCI	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	ETHYL EICOSAPENTAENOIC ACID		TdgClinicalTrial	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	CER-002		TdgClinicalTrial	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	CER-002	agonist	ChemblInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	MBX-8025		TdgClinicalTrial	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	MBX-8025	agonist	TTD	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	MBX-8025	agonist	ChemblInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	DOCETAXEL		PharmGKB	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	THALIDOMIDE		PharmGKB	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	NETOGLITAZONE	agonist	TTD	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	SODELGLITAZAR	agonist	ChemblInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PPARD	AVE0847	agonist	ChemblInteractions	Druggable genome,nuclear hormone receptor,transcription factor binding
+PC	Pyruvic acid		DrugBank	
+PC	Biotin		DrugBank	
+PC	AMPHOTERICIN B		NCI	
+PC	CORTISOL		NCI	
+ATP1A3	DESLANOSIDE	inhibitor	ChemblInteractions	Abc transporter,drug resistance,druggable genome,ion channel,transporter
+ATP1A3	DIGOXIN	inhibitor	ChemblInteractions	Abc transporter,drug resistance,druggable genome,ion channel,transporter
+ATP1A3	ACETYLDIGITOXIN	inhibitor	ChemblInteractions	Abc transporter,drug resistance,druggable genome,ion channel,transporter
+ATP1A3	DIGITOXIN	inhibitor	ChemblInteractions	Abc transporter,drug resistance,druggable genome,ion channel,transporter
+GRM4	L-Glutamic Acid		DrugBank	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	L-AP4	agonist	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	L-SERINE-O-PHOSPHATE	agonist	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	LSP4-2022	agonist	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	FP0429	agonist	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	(R,S)-4-PPG	agonist	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	(S)-3,4-DCPG	agonist	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	COMPOUND 11 [PMID: 20638279]	allosteric modulator	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	MPEP	allosteric modulator	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	PXT002331	allosteric modulator	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	SIB-1893	allosteric modulator	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	VU0001171	allosteric modulator	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	VU0080241	allosteric modulator	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	VU0092145	allosteric modulator	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	VU0155041	allosteric modulator	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	VU0359516	allosteric modulator	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+GRM4	LY341495	antagonist	GuideToPharmacologyInteractions	Druggable genome,g protein coupled receptor,kinase,serine threonine kinase
+MADD	VERAPAMIL		PharmGKB	Kinase,serine threonine kinase,tumor suppressor
+F13A1	1,2-Propanediol		DrugBank	Druggable genome
+MGA	MIGLITOL	inhibitor	ChemblInteractions	
+MGA	ACARBOSE	inhibitor	ChemblInteractions	
+B3GAT1	Uridine-5'-Diphosphate		DrugBank	
+B3GAT1	CHONDROITIN SULFATE		NCI	
+TAOK3	COMPOUND 89S [PMID: 19115845]	inhibitor	GuideToPharmacologyInteractions	Dna repair,druggable genome,kinase,serine threonine kinase,tumor suppressor,tyrosine kinase
+RUNX1	METHACHOLINE CHLORIDE		PharmGKB	Clinically actionable
+RUNX1	CYTARABINE		CIViC	Clinically actionable
+RUNX1	Doxorubicin		CKB	Clinically actionable
+RUNX1	RN-1		CKB	Clinically actionable
+SLC1A2	L-Glutamic Acid		DrugBank	Cell surface,drug resistance,druggable genome,transporter
+SLC1A2	DIHYDROKAINATE	inhibitor	GuideToPharmacologyInteractions	Cell surface,drug resistance,druggable genome,transporter
+SLC1A2	SYM2081	inhibitor	GuideToPharmacologyInteractions	Cell surface,drug resistance,druggable genome,transporter
+SLC1A2	THREO-3-METHYLGLUTAMATE	inhibitor	GuideToPharmacologyInteractions	Cell surface,drug resistance,druggable genome,transporter
+SLC1A2	WAY-213613	inhibitor	GuideToPharmacologyInteractions	Cell surface,drug resistance,druggable genome,transporter
+SLC1A2	[3H]SYM2081		GuideToPharmacologyInteractions	Cell surface,drug resistance,druggable genome,transporter
+RAB11A	5'-Guanosine-Diphosphate-Monothiophosphate		DrugBank	Cell surface,tumor suppressor
+RAB11A	Guanosine-5'-Diphosphate		DrugBank	Cell surface,tumor suppressor

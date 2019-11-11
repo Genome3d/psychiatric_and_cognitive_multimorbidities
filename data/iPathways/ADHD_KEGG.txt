@@ -1,0 +1,92 @@
+Antigen processing and presentation
+Systemic lupus erythematosus
+Staphylococcus aureus infection
+Th17 cell differentiation
+Tuberculosis
+Influenza A
+Inflammatory bowel disease (IBD)
+Human cytomegalovirus infection
+Th1 and Th2 cell differentiation
+Vascular smooth muscle contraction
+MAPK signaling pathway
+GnRH signaling pathway
+Human papillomavirus infection
+Cellular senescence
+Natural killer cell mediated cytotoxicity
+Oxytocin signaling pathway
+Pathways in cancer
+Kaposi sarcoma-associated herpesvirus infection
+Adrenergic signaling in cardiomyocytes
+Rap1 signaling pathway
+Aldosterone synthesis and secretion
+cGMP-PKG signaling pathway
+Phospholipase D signaling pathway
+Parathyroid hormone synthesis, secretion and action
+Pancreatic secretion
+Human immunodeficiency virus 1 infection
+Endocrine resistance
+Chemokine signaling pathway
+Apelin signaling pathway
+Gap junction
+Serotonergic synapse
+Estrogen signaling pathway
+Melanogenesis
+cAMP signaling pathway
+Relaxin signaling pathway
+Axon guidance
+Long-term depression
+Bile secretion
+Long-term potentiation
+Insulin signaling pathway
+Thyroid hormone signaling pathway
+Alcoholism
+Ras signaling pathway
+Sphingolipid signaling pathway
+Wnt signaling pathway
+VEGF signaling pathway
+Fc epsilon RI signaling pathway
+Fc gamma R-mediated phagocytosis
+mTOR signaling pathway
+Vibrio cholerae infection
+Pertussis
+Renal cell carcinoma
+Hepatocellular carcinoma
+Breast cancer
+Choline metabolism in cancer
+Tight junction
+Gastric cancer
+PI3K-Akt signaling pathway
+Olfactory transduction
+Hepatitis B
+C-type lectin receptor signaling pathway
+FoxO signaling pathway
+Autophagy - animal
+Focal adhesion
+B cell receptor signaling pathway
+Neurotrophin signaling pathway
+Insulin resistance
+EGFR tyrosine kinase inhibitor resistance
+ErbB signaling pathway
+Apoptosis
+Notch signaling pathway
+TGF-beta signaling pathway
+Hippo signaling pathway
+T cell receptor signaling pathway
+Prolactin signaling pathway
+African trypanosomiasis
+Amoebiasis
+Hepatitis C
+Endometrial cancer
+Proteoglycans in cancer
+Colorectal cancer
+Pancreatic cancer
+Glioma
+Prostate cancer
+Melanoma
+Bladder cancer
+Chronic myeloid leukemia
+Acute myeloid leukemia
+Non-small cell lung cancer
+Central carbon metabolism in cancer
+PD-L1 expression and PD-1 checkpoint pathway in cancer
+Fluid shear stress and atherosclerosis

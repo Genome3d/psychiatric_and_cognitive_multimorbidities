@@ -1,0 +1,145 @@
+Phenotype	System	New_tissue	Tissue	Number	Interactions	Total	Percentage
+Cognition	Body fat	Adipose - Subcutaneous	Adipose_Subcutaneous	435	< 1Mb	466	93,35
+Cognition	Body fat	Adipose - Subcutaneous	Adipose_Subcutaneous	24	>= 1Mb	466	5,15
+Cognition	Body fat	Adipose - Subcutaneous	Adipose_Subcutaneous	7	inter-chrom	466	1,50
+Cognition	Body fat	Adipose - Visceral (Omentum)	Adipose_Visceral_Omentum	285	< 1Mb	317	89,91
+Cognition	Body fat	Adipose - Visceral (Omentum)	Adipose_Visceral_Omentum	23	>= 1Mb	317	7,26
+Cognition	Body fat	Adipose - Visceral (Omentum)	Adipose_Visceral_Omentum	9	inter-chrom	317	2,84
+Cognition	Endocrine system	Adrenal Gland	Adrenal_Gland	193	< 1Mb	218	88,53
+Cognition	Endocrine system	Adrenal Gland	Adrenal_Gland	17	>= 1Mb	218	7,80
+Cognition	Endocrine system	Adrenal Gland	Adrenal_Gland	8	inter-chrom	218	3,67
+Cognition	Circulatory system	Artery - Aorta	Artery_Aorta	379	< 1Mb	400	94,75
+Cognition	Circulatory system	Artery - Aorta	Artery_Aorta	18	>= 1Mb	400	4,50
+Cognition	Circulatory system	Artery - Aorta	Artery_Aorta	3	inter-chrom	400	0,75
+Cognition	Circulatory system	Artery - Coronary	Artery_Coronary	140	< 1Mb	166	84,34
+Cognition	Circulatory system	Artery - Coronary	Artery_Coronary	17	>= 1Mb	166	10,24
+Cognition	Circulatory system	Artery - Coronary	Artery_Coronary	9	inter-chrom	166	5,42
+Cognition	Circulatory system	Artery - Tibial	Artery_Tibial	511	< 1Mb	539	94,81
+Cognition	Circulatory system	Artery - Tibial	Artery_Tibial	25	>= 1Mb	539	4,64
+Cognition	Circulatory system	Artery - Tibial	Artery_Tibial	3	inter-chrom	539	0,56
+Cognition	Nervous System	Brain - Amygdala	Brain_Amygdala	69	< 1Mb	93	74,19
+Cognition	Nervous System	Brain - Amygdala	Brain_Amygdala	13	>= 1Mb	93	13,98
+Cognition	Nervous System	Brain - Amygdala	Brain_Amygdala	11	inter-chrom	93	11,83
+Cognition	Nervous System	Brain - Anterior cingulate cortex (BA24)	Brain_Anterior_cingulate_cortex_BA24	113	< 1Mb	132	85,61
+Cognition	Nervous System	Brain - Anterior cingulate cortex (BA24)	Brain_Anterior_cingulate_cortex_BA24	13	>= 1Mb	132	9,85
+Cognition	Nervous System	Brain - Anterior cingulate cortex (BA24)	Brain_Anterior_cingulate_cortex_BA24	6	inter-chrom	132	4,55
+Cognition	Nervous System	Brain - Caudate (basal ganglia)	Brain_Caudate_basal_ganglia	135	< 1Mb	152	88,82
+Cognition	Nervous System	Brain - Caudate (basal ganglia)	Brain_Caudate_basal_ganglia	9	>= 1Mb	152	5,92
+Cognition	Nervous System	Brain - Caudate (basal ganglia)	Brain_Caudate_basal_ganglia	8	inter-chrom	152	5,26
+Cognition	Nervous System	Brain - Cerebellar Hemisphere	Brain_Cerebellar_Hemisphere	208	< 1Mb	243	85,60
+Cognition	Nervous System	Brain - Cerebellar Hemisphere	Brain_Cerebellar_Hemisphere	23	>= 1Mb	243	9,47
+Cognition	Nervous System	Brain - Cerebellar Hemisphere	Brain_Cerebellar_Hemisphere	12	inter-chrom	243	4,94
+Cognition	Nervous System	Brain - Cerebellum	Brain_Cerebellum	312	< 1Mb	354	88,14
+Cognition	Nervous System	Brain - Cerebellum	Brain_Cerebellum	32	>= 1Mb	354	9,04
+Cognition	Nervous System	Brain - Cerebellum	Brain_Cerebellum	10	inter-chrom	354	2,82
+Cognition	Nervous System	Brain - Cortex	Brain_Cortex	175	< 1Mb	203	86,21
+Cognition	Nervous System	Brain - Cortex	Brain_Cortex	22	>= 1Mb	203	10,84
+Cognition	Nervous System	Brain - Cortex	Brain_Cortex	6	inter-chrom	203	2,96
+Cognition	Nervous System	Brain - Frontal Cortex (BA9)	Brain_Frontal_Cortex_BA9	110	< 1Mb	130	84,62
+Cognition	Nervous System	Brain - Frontal Cortex (BA9)	Brain_Frontal_Cortex_BA9	7	>= 1Mb	130	5,38
+Cognition	Nervous System	Brain - Frontal Cortex (BA9)	Brain_Frontal_Cortex_BA9	13	inter-chrom	130	10,00
+Cognition	Nervous System	Brain - Hippocampus	Brain_Hippocampus	79	< 1Mb	97	81,44
+Cognition	Nervous System	Brain - Hippocampus	Brain_Hippocampus	9	>= 1Mb	97	9,28
+Cognition	Nervous System	Brain - Hippocampus	Brain_Hippocampus	9	inter-chrom	97	9,28
+Cognition	Nervous System	Brain - Hypothalamus	Brain_Hypothalamus	90	< 1Mb	113	79,65
+Cognition	Nervous System	Brain - Hypothalamus	Brain_Hypothalamus	11	>= 1Mb	113	9,73
+Cognition	Nervous System	Brain - Hypothalamus	Brain_Hypothalamus	12	inter-chrom	113	10,62
+Cognition	Nervous System	Brain - Nucleus accumbens (basal ganglia)	Brain_Nucleus_accumbens_basal_ganglia	135	< 1Mb	157	85,99
+Cognition	Nervous System	Brain - Nucleus accumbens (basal ganglia)	Brain_Nucleus_accumbens_basal_ganglia	15	>= 1Mb	157	9,55
+Cognition	Nervous System	Brain - Nucleus accumbens (basal ganglia)	Brain_Nucleus_accumbens_basal_ganglia	7	inter-chrom	157	4,46
+Cognition	Nervous System	Brain - Putamen (basal ganglia)	Brain_Putamen_basal_ganglia	100	< 1Mb	119	84,03
+Cognition	Nervous System	Brain - Putamen (basal ganglia)	Brain_Putamen_basal_ganglia	10	>= 1Mb	119	8,40
+Cognition	Nervous System	Brain - Putamen (basal ganglia)	Brain_Putamen_basal_ganglia	9	inter-chrom	119	7,56
+Cognition	Nervous System	Brain - Spinal cord (cervical c-1)	Brain_Spinal_cord_cervical_c-1	85	< 1Mb	112	75,89
+Cognition	Nervous System	Brain - Spinal cord (cervical c-1)	Brain_Spinal_cord_cervical_c-1	8	>= 1Mb	112	7,14
+Cognition	Nervous System	Brain - Spinal cord (cervical c-1)	Brain_Spinal_cord_cervical_c-1	19	inter-chrom	112	16,96
+Cognition	Nervous System	Brain - Substantia nigra	Brain_Substantia_nigra	53	< 1Mb	71	74,65
+Cognition	Nervous System	Brain - Substantia nigra	Brain_Substantia_nigra	3	>= 1Mb	71	4,23
+Cognition	Nervous System	Brain - Substantia nigra	Brain_Substantia_nigra	15	inter-chrom	71	21,13
+Cognition	Exocrine system	Breast - Mammary Tissue	Breast_Mammary_Tissue	240	< 1Mb	268	89,55
+Cognition	Exocrine system	Breast - Mammary Tissue	Breast_Mammary_Tissue	16	>= 1Mb	268	5,97
+Cognition	Exocrine system	Breast - Mammary Tissue	Breast_Mammary_Tissue	12	inter-chrom	268	4,48
+Cognition	Transformed cells	Cells - EBV-transformed lymphocytes	Cells_EBV-transformed_lymphocytes	92	< 1Mb	109	84,40
+Cognition	Transformed cells	Cells - EBV-transformed lymphocytes	Cells_EBV-transformed_lymphocytes	10	>= 1Mb	109	9,17
+Cognition	Transformed cells	Cells - EBV-transformed lymphocytes	Cells_EBV-transformed_lymphocytes	7	inter-chrom	109	6,42
+Cognition	Transformed cells	Cells - Transformed fibroblasts	Cells_Transformed_fibroblasts	365	< 1Mb	393	92,88
+Cognition	Transformed cells	Cells - Transformed fibroblasts	Cells_Transformed_fibroblasts	22	>= 1Mb	393	5,60
+Cognition	Transformed cells	Cells - Transformed fibroblasts	Cells_Transformed_fibroblasts	6	inter-chrom	393	1,53
+Cognition	Digestive system	Colon - Sigmoid	Colon_Sigmoid	224	< 1Mb	247	90,69
+Cognition	Digestive system	Colon - Sigmoid	Colon_Sigmoid	16	>= 1Mb	247	6,48
+Cognition	Digestive system	Colon - Sigmoid	Colon_Sigmoid	7	inter-chrom	247	2,83
+Cognition	Digestive system	Colon - Transverse	Colon_Transverse	239	< 1Mb	258	92,64
+Cognition	Digestive system	Colon - Transverse	Colon_Transverse	14	>= 1Mb	258	5,43
+Cognition	Digestive system	Colon - Transverse	Colon_Transverse	5	inter-chrom	258	1,94
+Cognition	Digestive system	Esophagus - Gastroesophageal Junction	Esophagus_Gastroesophageal_Junction	237	< 1Mb	270	87,78
+Cognition	Digestive system	Esophagus - Gastroesophageal Junction	Esophagus_Gastroesophageal_Junction	14	>= 1Mb	270	5,19
+Cognition	Digestive system	Esophagus - Gastroesophageal Junction	Esophagus_Gastroesophageal_Junction	19	inter-chrom	270	7,04
+Cognition	Digestive system	Esophagus - Mucosa	Esophagus_Mucosa	444	< 1Mb	481	92,31
+Cognition	Digestive system	Esophagus - Mucosa	Esophagus_Mucosa	27	>= 1Mb	481	5,61
+Cognition	Digestive system	Esophagus - Mucosa	Esophagus_Mucosa	10	inter-chrom	481	2,08
+Cognition	Digestive system	Esophagus - Muscularis	Esophagus_Muscularis	436	< 1Mb	465	93,76
+Cognition	Digestive system	Esophagus - Muscularis	Esophagus_Muscularis	22	>= 1Mb	465	4,73
+Cognition	Digestive system	Esophagus - Muscularis	Esophagus_Muscularis	7	inter-chrom	465	1,51
+Cognition	Circulatory system	Heart - Atrial Appendage	Heart_Atrial_Appendage	251	< 1Mb	274	91,61
+Cognition	Circulatory system	Heart - Atrial Appendage	Heart_Atrial_Appendage	20	>= 1Mb	274	7,30
+Cognition	Circulatory system	Heart - Atrial Appendage	Heart_Atrial_Appendage	3	inter-chrom	274	1,09
+Cognition	Circulatory system	Heart - Left Ventricle	Heart_Left_Ventricle	235	< 1Mb	263	89,35
+Cognition	Circulatory system	Heart - Left Ventricle	Heart_Left_Ventricle	19	>= 1Mb	263	7,22
+Cognition	Circulatory system	Heart - Left Ventricle	Heart_Left_Ventricle	9	inter-chrom	263	3,42
+Cognition	Digestive system	Liver	Liver	151	< 1Mb	172	87,79
+Cognition	Digestive system	Liver	Liver	12	>= 1Mb	172	6,98
+Cognition	Digestive system	Liver	Liver	9	inter-chrom	172	5,23
+Cognition	Respiratory system	Lung	Lung	395	< 1Mb	425	92,94
+Cognition	Respiratory system	Lung	Lung	23	>= 1Mb	425	5,41
+Cognition	Respiratory system	Lung	Lung	7	inter-chrom	425	1,65
+Cognition	Exocrine system	Minor Salivary Gland	Minor_Salivary_Gland	66	< 1Mb	80	82,50
+Cognition	Exocrine system	Minor Salivary Gland	Minor_Salivary_Gland	6	>= 1Mb	80	7,50
+Cognition	Exocrine system	Minor Salivary Gland	Minor_Salivary_Gland	8	inter-chrom	80	10,00
+Cognition	Muscular system	Muscle - Skeletal	Muscle_Skeletal	523	< 1Mb	575	90,96
+Cognition	Muscular system	Muscle - Skeletal	Muscle_Skeletal	50	>= 1Mb	575	8,70
+Cognition	Muscular system	Muscle - Skeletal	Muscle_Skeletal	2	inter-chrom	575	0,35
+Cognition	Nervous System	Nerve - Tibial	Nerve_Tibial	514	< 1Mb	568	90,49
+Cognition	Nervous System	Nerve - Tibial	Nerve_Tibial	44	>= 1Mb	568	7,75
+Cognition	Nervous System	Nerve - Tibial	Nerve_Tibial	10	inter-chrom	568	1,76
+Cognition	Reproductive system	Ovary	Ovary	106	< 1Mb	136	77,94
+Cognition	Reproductive system	Ovary	Ovary	13	>= 1Mb	136	9,56
+Cognition	Reproductive system	Ovary	Ovary	17	inter-chrom	136	12,50
+Cognition	Endocrine system	Pancreas	Pancreas	240	< 1Mb	255	94,12
+Cognition	Endocrine system	Pancreas	Pancreas	8	>= 1Mb	255	3,14
+Cognition	Endocrine system	Pancreas	Pancreas	7	inter-chrom	255	2,75
+Cognition	Endocrine system	Pituitary	Pituitary	177	< 1Mb	196	90,31
+Cognition	Endocrine system	Pituitary	Pituitary	11	>= 1Mb	196	5,61
+Cognition	Endocrine system	Pituitary	Pituitary	8	inter-chrom	196	4,08
+Cognition	Reproductive system	Prostate	Prostate	122	< 1Mb	131	93,13
+Cognition	Reproductive system	Prostate	Prostate	5	>= 1Mb	131	3,82
+Cognition	Reproductive system	Prostate	Prostate	4	inter-chrom	131	3,05
+Cognition	Exocrine system	Skin - Not Sun Exposed (Suprapubic)	Skin_Not_Sun_Exposed_Suprapubic	407	< 1Mb	440	92,50
+Cognition	Exocrine system	Skin - Not Sun Exposed (Suprapubic)	Skin_Not_Sun_Exposed_Suprapubic	25	>= 1Mb	440	5,68
+Cognition	Exocrine system	Skin - Not Sun Exposed (Suprapubic)	Skin_Not_Sun_Exposed_Suprapubic	8	inter-chrom	440	1,82
+Cognition	Exocrine system	Skin - Sun Exposed (Lower leg)	Skin_Sun_Exposed_Lower_leg	491	< 1Mb	527	93,17
+Cognition	Exocrine system	Skin - Sun Exposed (Lower leg)	Skin_Sun_Exposed_Lower_leg	29	>= 1Mb	527	5,50
+Cognition	Exocrine system	Skin - Sun Exposed (Lower leg)	Skin_Sun_Exposed_Lower_leg	7	inter-chrom	527	1,33
+Cognition	Digestive system	Small Intestine - Terminal Ileum	Small_Intestine_Terminal_Ileum	108	< 1Mb	129	83,72
+Cognition	Digestive system	Small Intestine - Terminal Ileum	Small_Intestine_Terminal_Ileum	11	>= 1Mb	129	8,53
+Cognition	Digestive system	Small Intestine - Terminal Ileum	Small_Intestine_Terminal_Ileum	10	inter-chrom	129	7,75
+Cognition	Lymphatic system	Spleen	Spleen	176	< 1Mb	197	89,34
+Cognition	Lymphatic system	Spleen	Spleen	15	>= 1Mb	197	7,61
+Cognition	Lymphatic system	Spleen	Spleen	6	inter-chrom	197	3,05
+Cognition	Digestive system	Stomach	Stomach	205	< 1Mb	227	90,31
+Cognition	Digestive system	Stomach	Stomach	12	>= 1Mb	227	5,29
+Cognition	Digestive system	Stomach	Stomach	10	inter-chrom	227	4,41
+Cognition	Reproductive system	Testis	Testis	464	< 1Mb	512	90,63
+Cognition	Reproductive system	Testis	Testis	39	>= 1Mb	512	7,62
+Cognition	Reproductive system	Testis	Testis	9	inter-chrom	512	1,76
+Cognition	Endocrine system	Thyroid	Thyroid	498	< 1Mb	570	87,37
+Cognition	Endocrine system	Thyroid	Thyroid	61	>= 1Mb	570	10,70
+Cognition	Endocrine system	Thyroid	Thyroid	11	inter-chrom	570	1,93
+Cognition	Reproductive system	Uterus	Uterus	88	< 1Mb	105	83,81
+Cognition	Reproductive system	Uterus	Uterus	12	>= 1Mb	105	11,43
+Cognition	Reproductive system	Uterus	Uterus	5	inter-chrom	105	4,76
+Cognition	Reproductive system	Vagina	Vagina	86	< 1Mb	108	79,63
+Cognition	Reproductive system	Vagina	Vagina	14	>= 1Mb	108	12,96
+Cognition	Reproductive system	Vagina	Vagina	8	inter-chrom	108	7,41
+Cognition	Circulatory system	Whole Blood	Whole_Blood	361	< 1Mb	385	93,77
+Cognition	Circulatory system	Whole Blood	Whole_Blood	14	>= 1Mb	385	3,64
+Cognition	Circulatory system	Whole Blood	Whole_Blood	10	inter-chrom	385	2,60

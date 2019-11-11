@@ -1,0 +1,62 @@
+Pathway	Total_genes	Shared_genes	Phenotype_specific_genes
+Acute myeloid leukemia	66	4	7
+Adrenergic signaling in cardiomyocytes	145	9	23
+Alcoholism	180	6	14
+Antigen processing and presentation	77	13	7
+Apelin signaling pathway	137	7	17
+Autophagy - animal	128	2	18
+Axon guidance	181	10	38
+Breast cancer	147	5	16
+Cellular senescence	160	10	13
+Chemokine signaling pathway	190	7	20
+Chronic myeloid leukemia	76	4	9
+Colorectal cancer	86	4	10
+EGFR tyrosine kinase inhibitor resistance	79	3	13
+Endocrine resistance	98	6	10
+Endometrial cancer	58	3	8
+Fc gamma R-mediated phagocytosis	91	3	11
+Fluid shear stress and atherosclerosis	139	2	15
+Focal adhesion	199	3	25
+FoxO signaling pathway	132	5	10
+Gastric cancer	149	4	15
+Glioma	75	3	11
+GnRH signaling pathway	93	6	13
+Hepatitis B	163	5	16
+Hepatitis C	155	4	17
+Hepatocellular carcinoma	168	6	17
+Hippo signaling pathway	154	6	17
+Human cytomegalovirus infection	225	13	30
+Human immunodeficiency virus 1 infection	212	10	25
+Human papillomavirus infection	330	17	31
+Influenza A	167	12	13
+Insulin resistance	108	4	13
+Insulin signaling pathway	137	4	16
+Kaposi sarcoma-associated herpesvirus infection	186	14	19
+Long-term depression	60	6	12
+Long-term potentiation	67	6	11
+MAPK signaling pathway	295	17	36
+Melanogenesis	101	5	13
+Melanoma	72	3	8
+Natural killer cell mediated cytotoxicity	131	8	8
+Neurotrophin signaling pathway	119	4	20
+Non-small cell lung cancer	66	5	11
+PD-L1 expression and PD-1 checkpoint pathway in cancer	89	5	10
+PI3K-Akt signaling pathway	354	9	42
+Parathyroid hormone synthesis, secretion and action	106	8	16
+Pathways in cancer	530	20	56
+Phospholipase D signaling pathway	148	7	20
+Prolactin signaling pathway	70	2	11
+Prostate cancer	97	4	10
+Proteoglycans in cancer	201	7	26
+Rap1 signaling pathway	206	13	30
+Ras signaling pathway	232	5	32
+Relaxin signaling pathway	130	4	19
+TGF-beta signaling pathway	94	5	9
+Thyroid hormone signaling pathway	116	7	20
+Tight junction	170	8	24
+Tuberculosis	179	13	18
+Vascular smooth muscle contraction	132	9	19
+Wnt signaling pathway	159	8	19
+cAMP signaling pathway	212	11	23
+cGMP-PKG signaling pathway	166	11	28
+mTOR signaling pathway	153	7	15

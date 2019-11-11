@@ -1,0 +1,145 @@
+Phenotype	System	New_tissue	Tissue	Number	Interactions	Total	Percentage
+SCH	Body fat	Adipose - Subcutaneous	Adipose_Subcutaneous	398	< 1Mb	455	87,47
+SCH	Body fat	Adipose - Subcutaneous	Adipose_Subcutaneous	49	>= 1Mb	455	10,77
+SCH	Body fat	Adipose - Subcutaneous	Adipose_Subcutaneous	8	inter-chrom	455	1,76
+SCH	Body fat	Adipose - Visceral (Omentum)	Adipose_Visceral_Omentum	308	< 1Mb	362	85,08
+SCH	Body fat	Adipose - Visceral (Omentum)	Adipose_Visceral_Omentum	43	>= 1Mb	362	11,88
+SCH	Body fat	Adipose - Visceral (Omentum)	Adipose_Visceral_Omentum	11	inter-chrom	362	3,04
+SCH	Endocrine system	Adrenal Gland	Adrenal_Gland	127	< 1Mb	158	80,38
+SCH	Endocrine system	Adrenal Gland	Adrenal_Gland	22	>= 1Mb	158	13,92
+SCH	Endocrine system	Adrenal Gland	Adrenal_Gland	9	inter-chrom	158	5,70
+SCH	Circulatory system	Artery - Aorta	Artery_Aorta	312	< 1Mb	353	88,39
+SCH	Circulatory system	Artery - Aorta	Artery_Aorta	30	>= 1Mb	353	8,50
+SCH	Circulatory system	Artery - Aorta	Artery_Aorta	11	inter-chrom	353	3,12
+SCH	Circulatory system	Artery - Coronary	Artery_Coronary	101	< 1Mb	129	78,29
+SCH	Circulatory system	Artery - Coronary	Artery_Coronary	20	>= 1Mb	129	15,50
+SCH	Circulatory system	Artery - Coronary	Artery_Coronary	8	inter-chrom	129	6,20
+SCH	Circulatory system	Artery - Tibial	Artery_Tibial	433	< 1Mb	478	90,59
+SCH	Circulatory system	Artery - Tibial	Artery_Tibial	39	>= 1Mb	478	8,16
+SCH	Circulatory system	Artery - Tibial	Artery_Tibial	6	inter-chrom	478	1,26
+SCH	Nervous System	Brain - Amygdala	Brain_Amygdala	33	< 1Mb	45	73,33
+SCH	Nervous System	Brain - Amygdala	Brain_Amygdala	3	>= 1Mb	45	6,67
+SCH	Nervous System	Brain - Amygdala	Brain_Amygdala	9	inter-chrom	45	20,00
+SCH	Nervous System	Brain - Anterior cingulate cortex (BA24)	Brain_Anterior_cingulate_cortex_BA24	62	< 1Mb	73	84,93
+SCH	Nervous System	Brain - Anterior cingulate cortex (BA24)	Brain_Anterior_cingulate_cortex_BA24	2	>= 1Mb	73	2,74
+SCH	Nervous System	Brain - Anterior cingulate cortex (BA24)	Brain_Anterior_cingulate_cortex_BA24	9	inter-chrom	73	12,33
+SCH	Nervous System	Brain - Caudate (basal ganglia)	Brain_Caudate_basal_ganglia	94	< 1Mb	111	84,68
+SCH	Nervous System	Brain - Caudate (basal ganglia)	Brain_Caudate_basal_ganglia	6	>= 1Mb	111	5,41
+SCH	Nervous System	Brain - Caudate (basal ganglia)	Brain_Caudate_basal_ganglia	11	inter-chrom	111	9,91
+SCH	Nervous System	Brain - Cerebellar Hemisphere	Brain_Cerebellar_Hemisphere	173	< 1Mb	216	80,09
+SCH	Nervous System	Brain - Cerebellar Hemisphere	Brain_Cerebellar_Hemisphere	33	>= 1Mb	216	15,28
+SCH	Nervous System	Brain - Cerebellar Hemisphere	Brain_Cerebellar_Hemisphere	10	inter-chrom	216	4,63
+SCH	Nervous System	Brain - Cerebellum	Brain_Cerebellum	288	< 1Mb	326	88,34
+SCH	Nervous System	Brain - Cerebellum	Brain_Cerebellum	33	>= 1Mb	326	10,12
+SCH	Nervous System	Brain - Cerebellum	Brain_Cerebellum	5	inter-chrom	326	1,53
+SCH	Nervous System	Brain - Cortex	Brain_Cortex	124	< 1Mb	155	80,00
+SCH	Nervous System	Brain - Cortex	Brain_Cortex	23	>= 1Mb	155	14,84
+SCH	Nervous System	Brain - Cortex	Brain_Cortex	8	inter-chrom	155	5,16
+SCH	Nervous System	Brain - Frontal Cortex (BA9)	Brain_Frontal_Cortex_BA9	85	< 1Mb	110	77,27
+SCH	Nervous System	Brain - Frontal Cortex (BA9)	Brain_Frontal_Cortex_BA9	17	>= 1Mb	110	15,45
+SCH	Nervous System	Brain - Frontal Cortex (BA9)	Brain_Frontal_Cortex_BA9	8	inter-chrom	110	7,27
+SCH	Nervous System	Brain - Hippocampus	Brain_Hippocampus	65	< 1Mb	80	81,25
+SCH	Nervous System	Brain - Hippocampus	Brain_Hippocampus	5	>= 1Mb	80	6,25
+SCH	Nervous System	Brain - Hippocampus	Brain_Hippocampus	10	inter-chrom	80	12,50
+SCH	Nervous System	Brain - Hypothalamus	Brain_Hypothalamus	69	< 1Mb	88	78,41
+SCH	Nervous System	Brain - Hypothalamus	Brain_Hypothalamus	13	>= 1Mb	88	14,77
+SCH	Nervous System	Brain - Hypothalamus	Brain_Hypothalamus	6	inter-chrom	88	6,82
+SCH	Nervous System	Brain - Nucleus accumbens (basal ganglia)	Brain_Nucleus_accumbens_basal_ganglia	69	< 1Mb	90	76,67
+SCH	Nervous System	Brain - Nucleus accumbens (basal ganglia)	Brain_Nucleus_accumbens_basal_ganglia	10	>= 1Mb	90	11,11
+SCH	Nervous System	Brain - Nucleus accumbens (basal ganglia)	Brain_Nucleus_accumbens_basal_ganglia	11	inter-chrom	90	12,22
+SCH	Nervous System	Brain - Putamen (basal ganglia)	Brain_Putamen_basal_ganglia	61	< 1Mb	70	87,14
+SCH	Nervous System	Brain - Putamen (basal ganglia)	Brain_Putamen_basal_ganglia	2	>= 1Mb	70	2,86
+SCH	Nervous System	Brain - Putamen (basal ganglia)	Brain_Putamen_basal_ganglia	7	inter-chrom	70	10,00
+SCH	Nervous System	Brain - Spinal cord (cervical c-1)	Brain_Spinal_cord_cervical_c-1	42	< 1Mb	58	72,41
+SCH	Nervous System	Brain - Spinal cord (cervical c-1)	Brain_Spinal_cord_cervical_c-1	9	>= 1Mb	58	15,52
+SCH	Nervous System	Brain - Spinal cord (cervical c-1)	Brain_Spinal_cord_cervical_c-1	7	inter-chrom	58	12,07
+SCH	Nervous System	Brain - Substantia nigra	Brain_Substantia_nigra	15	< 1Mb	33	45,45
+SCH	Nervous System	Brain - Substantia nigra	Brain_Substantia_nigra	4	>= 1Mb	33	12,12
+SCH	Nervous System	Brain - Substantia nigra	Brain_Substantia_nigra	14	inter-chrom	33	42,42
+SCH	Exocrine system	Breast - Mammary Tissue	Breast_Mammary_Tissue	242	< 1Mb	279	86,74
+SCH	Exocrine system	Breast - Mammary Tissue	Breast_Mammary_Tissue	26	>= 1Mb	279	9,32
+SCH	Exocrine system	Breast - Mammary Tissue	Breast_Mammary_Tissue	11	inter-chrom	279	3,94
+SCH	Transformed cells	Cells - EBV-transformed lymphocytes	Cells_EBV-transformed_lymphocytes	83	< 1Mb	97	85,57
+SCH	Transformed cells	Cells - EBV-transformed lymphocytes	Cells_EBV-transformed_lymphocytes	10	>= 1Mb	97	10,31
+SCH	Transformed cells	Cells - EBV-transformed lymphocytes	Cells_EBV-transformed_lymphocytes	4	inter-chrom	97	4,12
+SCH	Transformed cells	Cells - Transformed fibroblasts	Cells_Transformed_fibroblasts	395	< 1Mb	454	87,00
+SCH	Transformed cells	Cells - Transformed fibroblasts	Cells_Transformed_fibroblasts	50	>= 1Mb	454	11,01
+SCH	Transformed cells	Cells - Transformed fibroblasts	Cells_Transformed_fibroblasts	9	inter-chrom	454	1,98
+SCH	Digestive system	Colon - Sigmoid	Colon_Sigmoid	202	< 1Mb	227	88,99
+SCH	Digestive system	Colon - Sigmoid	Colon_Sigmoid	16	>= 1Mb	227	7,05
+SCH	Digestive system	Colon - Sigmoid	Colon_Sigmoid	9	inter-chrom	227	3,96
+SCH	Digestive system	Colon - Transverse	Colon_Transverse	238	< 1Mb	286	83,22
+SCH	Digestive system	Colon - Transverse	Colon_Transverse	34	>= 1Mb	286	11,89
+SCH	Digestive system	Colon - Transverse	Colon_Transverse	14	inter-chrom	286	4,90
+SCH	Digestive system	Esophagus - Gastroesophageal Junction	Esophagus_Gastroesophageal_Junction	212	< 1Mb	248	85,48
+SCH	Digestive system	Esophagus - Gastroesophageal Junction	Esophagus_Gastroesophageal_Junction	27	>= 1Mb	248	10,89
+SCH	Digestive system	Esophagus - Gastroesophageal Junction	Esophagus_Gastroesophageal_Junction	9	inter-chrom	248	3,63
+SCH	Digestive system	Esophagus - Mucosa	Esophagus_Mucosa	393	< 1Mb	456	86,18
+SCH	Digestive system	Esophagus - Mucosa	Esophagus_Mucosa	49	>= 1Mb	456	10,75
+SCH	Digestive system	Esophagus - Mucosa	Esophagus_Mucosa	14	inter-chrom	456	3,07
+SCH	Digestive system	Esophagus - Muscularis	Esophagus_Muscularis	377	< 1Mb	443	85,10
+SCH	Digestive system	Esophagus - Muscularis	Esophagus_Muscularis	53	>= 1Mb	443	11,96
+SCH	Digestive system	Esophagus - Muscularis	Esophagus_Muscularis	13	inter-chrom	443	2,93
+SCH	Circulatory system	Heart - Atrial Appendage	Heart_Atrial_Appendage	256	< 1Mb	296	86,49
+SCH	Circulatory system	Heart - Atrial Appendage	Heart_Atrial_Appendage	27	>= 1Mb	296	9,12
+SCH	Circulatory system	Heart - Atrial Appendage	Heart_Atrial_Appendage	13	inter-chrom	296	4,39
+SCH	Circulatory system	Heart - Left Ventricle	Heart_Left_Ventricle	203	< 1Mb	242	83,88
+SCH	Circulatory system	Heart - Left Ventricle	Heart_Left_Ventricle	28	>= 1Mb	242	11,57
+SCH	Circulatory system	Heart - Left Ventricle	Heart_Left_Ventricle	11	inter-chrom	242	4,55
+SCH	Digestive system	Liver	Liver	97	< 1Mb	133	72,93
+SCH	Digestive system	Liver	Liver	29	>= 1Mb	133	21,80
+SCH	Digestive system	Liver	Liver	7	inter-chrom	133	5,26
+SCH	Respiratory system	Lung	Lung	426	< 1Mb	509	83,69
+SCH	Respiratory system	Lung	Lung	71	>= 1Mb	509	13,95
+SCH	Respiratory system	Lung	Lung	12	inter-chrom	509	2,36
+SCH	Exocrine system	Minor Salivary Gland	Minor_Salivary_Gland	37	< 1Mb	58	63,79
+SCH	Exocrine system	Minor Salivary Gland	Minor_Salivary_Gland	10	>= 1Mb	58	17,24
+SCH	Exocrine system	Minor Salivary Gland	Minor_Salivary_Gland	11	inter-chrom	58	18,97
+SCH	Muscular system	Muscle - Skeletal	Muscle_Skeletal	441	< 1Mb	531	83,05
+SCH	Muscular system	Muscle - Skeletal	Muscle_Skeletal	78	>= 1Mb	531	14,69
+SCH	Muscular system	Muscle - Skeletal	Muscle_Skeletal	12	inter-chrom	531	2,26
+SCH	Nervous System	Nerve - Tibial	Nerve_Tibial	487	< 1Mb	542	89,85
+SCH	Nervous System	Nerve - Tibial	Nerve_Tibial	48	>= 1Mb	542	8,86
+SCH	Nervous System	Nerve - Tibial	Nerve_Tibial	7	inter-chrom	542	1,29
+SCH	Reproductive system	Ovary	Ovary	70	< 1Mb	92	76,09
+SCH	Reproductive system	Ovary	Ovary	14	>= 1Mb	92	15,22
+SCH	Reproductive system	Ovary	Ovary	8	inter-chrom	92	8,70
+SCH	Endocrine system	Pancreas	Pancreas	246	< 1Mb	283	86,93
+SCH	Endocrine system	Pancreas	Pancreas	25	>= 1Mb	283	8,83
+SCH	Endocrine system	Pancreas	Pancreas	12	inter-chrom	283	4,24
+SCH	Endocrine system	Pituitary	Pituitary	169	< 1Mb	194	87,11
+SCH	Endocrine system	Pituitary	Pituitary	12	>= 1Mb	194	6,19
+SCH	Endocrine system	Pituitary	Pituitary	13	inter-chrom	194	6,70
+SCH	Reproductive system	Prostate	Prostate	68	< 1Mb	89	76,40
+SCH	Reproductive system	Prostate	Prostate	10	>= 1Mb	89	11,24
+SCH	Reproductive system	Prostate	Prostate	11	inter-chrom	89	12,36
+SCH	Exocrine system	Skin - Not Sun Exposed (Suprapubic)	Skin_Not_Sun_Exposed_Suprapubic	349	< 1Mb	415	84,10
+SCH	Exocrine system	Skin - Not Sun Exposed (Suprapubic)	Skin_Not_Sun_Exposed_Suprapubic	55	>= 1Mb	415	13,25
+SCH	Exocrine system	Skin - Not Sun Exposed (Suprapubic)	Skin_Not_Sun_Exposed_Suprapubic	11	inter-chrom	415	2,65
+SCH	Exocrine system	Skin - Sun Exposed (Lower leg)	Skin_Sun_Exposed_Lower_leg	480	< 1Mb	559	85,87
+SCH	Exocrine system	Skin - Sun Exposed (Lower leg)	Skin_Sun_Exposed_Lower_leg	71	>= 1Mb	559	12,70
+SCH	Exocrine system	Skin - Sun Exposed (Lower leg)	Skin_Sun_Exposed_Lower_leg	8	inter-chrom	559	1,43
+SCH	Digestive system	Small Intestine - Terminal Ileum	Small_Intestine_Terminal_Ileum	83	< 1Mb	104	79,81
+SCH	Digestive system	Small Intestine - Terminal Ileum	Small_Intestine_Terminal_Ileum	14	>= 1Mb	104	13,46
+SCH	Digestive system	Small Intestine - Terminal Ileum	Small_Intestine_Terminal_Ileum	7	inter-chrom	104	6,73
+SCH	Lymphatic system	Spleen	Spleen	114	< 1Mb	144	79,17
+SCH	Lymphatic system	Spleen	Spleen	21	>= 1Mb	144	14,58
+SCH	Lymphatic system	Spleen	Spleen	9	inter-chrom	144	6,25
+SCH	Digestive system	Stomach	Stomach	158	< 1Mb	187	84,49
+SCH	Digestive system	Stomach	Stomach	23	>= 1Mb	187	12,30
+SCH	Digestive system	Stomach	Stomach	6	inter-chrom	187	3,21
+SCH	Reproductive system	Testis	Testis	359	< 1Mb	421	85,27
+SCH	Reproductive system	Testis	Testis	54	>= 1Mb	421	12,83
+SCH	Reproductive system	Testis	Testis	8	inter-chrom	421	1,90
+SCH	Endocrine system	Thyroid	Thyroid	611	< 1Mb	732	83,47
+SCH	Endocrine system	Thyroid	Thyroid	113	>= 1Mb	732	15,44
+SCH	Endocrine system	Thyroid	Thyroid	8	inter-chrom	732	1,09
+SCH	Reproductive system	Uterus	Uterus	38	< 1Mb	53	71,70
+SCH	Reproductive system	Uterus	Uterus	11	>= 1Mb	53	20,75
+SCH	Reproductive system	Uterus	Uterus	4	inter-chrom	53	7,55
+SCH	Reproductive system	Vagina	Vagina	41	< 1Mb	66	62,12
+SCH	Reproductive system	Vagina	Vagina	15	>= 1Mb	66	22,73
+SCH	Reproductive system	Vagina	Vagina	10	inter-chrom	66	15,15
+SCH	Circulatory system	Whole Blood	Whole_Blood	271	< 1Mb	315	86,03
+SCH	Circulatory system	Whole Blood	Whole_Blood	32	>= 1Mb	315	10,16
+SCH	Circulatory system	Whole Blood	Whole_Blood	12	inter-chrom	315	3,81

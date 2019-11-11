@@ -1,0 +1,1268 @@
+---
+title: Multimorbidities among psychiatric disorders and cognitive functioning. Data analysis and visualization
+author: "Evgeniia Golovina <e.golovina@auckland.ac.nz>"
+date: "22 October 2019"
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir ="/Volumes/resmed201800011-foffa/Archive/projects/P1_ND_and_Cogntiion")
+
+# install.packages("pacman")
+pacman::p_load(UpSetR, RColorBrewer, ggplot2, ggpubr, viridis, colormap, scales, 
+               dplyr, plotly, reshape, reshape2, ggdendro, grid, haploR, forcats,
+               scales, tidyverse, ggbeeswarm, readr, tidyr, Hmisc, plyr, ggthemes,
+               skimr, gage, KEGGREST)
+
+setwd("/Volumes/resmed201800011-foffa/Archive/projects/P1_ND_and_Cogntiion")
+
+# ADHD color: #701e7fff
+# Anxiety color: #c51b8a
+# BD color: #3182bd
+# SCZ color: #238443
+# UD color: #ec7014
+# Cognition color: #feb24c
+```
+
+### Data analysis and visualization pipeline
+
+## Modified UpSetR function
+
+We modified UpSetR function accroding to these instructions:
+# https://www.r-bloggers.com/hacking-our-way-through-upsetr/
+
+## 1. SNPs annotation
+
+Functional annotation of SNPs was performed using wANNOVAR tool (http://wannovar.wglab.org/)
+
+## 2. SNPs overlaps
+
+Intersect SNP sets to identify SNPs overlaps across psychiatric disorders and cognition (Fig. 3a).
+
+```{SNPs overlap, echo=FALSE}
+ADHD_snps <- readLines("data/snps/ADHD_snps.txt")
+Anxiety_snps <- readLines("data/snps/Anx_snps.txt")
+BD_snps <- readLines("data/snps/BD_snps.txt")
+UD_snps <- readLines("data/snps/UD_snps.txt")
+SCZ_snps <- readLines("data/snps/SCZ_snps.txt")
+Cognition_snps <- readLines("data/snps/Cognition_snps.txt")
+
+list_snps <- list("ADHD" = ADHD_snps, "BD" = BD_snps, "Anxiety" = Anxiety_snps, "SCZ" = SCZ_snps, "UD" = UD_snps, "Cognition" = Cognition_snps)
+
+# Ordered by degree
+tiff("PD_vs_Cognition_SNPs_overlap_by_degree.tiff", units="in", width=9, height=6, res=300)
+# jpeg("PD_vs_Cognition_SNPs_overlap_by_degree.jpeg", units="in", width=9, height=6, res=300)
+upset(fromList(list_snps), sets = c("Cognition","UD", "SCZ", "BD", "Anxiety", "ADHD"), nintersects = NA, keep.order = TRUE, sets.x.label = "Number of SNPs", mainbar.y.label = "Number of shared SNPs", point.size=4.5, text.scale = 2.2, group.by = "degree", order.by = "degree", main.bar.color = "#A9A9A9", sets.bar.color = c("#fec44f","#ec7014","#238443", "#3182bd", "#c51b8a", "#701e7fff"), number.angles = 0)
+dev.off()
+```
+
+## 3. CoDeS3D analysis
+
+Run `python codes3d.py -i data/snps/86_gwas_attention_deficit_hyperactivity_disorder_snps_2018-12-08_1E-06.txt -o results/codes3d_output/` to get ADHD_significant_eqtls.txt files
+Repeat this step for anxiety, BD, UD, SCH and Cognition phenotypes.
+
+## 4. eQTL SNPs annotation and eQTLs overlaps
+
+Extract eQTL SNPs list (the 1st column) from `results/codes3d_output/ADHD_significant_eqtls.txt`. Remove duplicates. Repeat this step for other phenotypes.
+
+Check the percentage of eQTL SNPs vs non-eQTL SNPs (Supp. Fig. 2a).
+
+```{eQTL and non-eQTL SNPs, echo=FALSE}
+x_order <- c('ADHD', 'Anxiety', 'BD', 'SCZ', 'UD', 'Cognition')
+SNPs.df <- data.frame(
+  Category = rep(c("eQTL","non-eQTL"),each=6),
+  Phenotype = rep(x_order,2),
+  Number = c(62, 134, 150, 515, 593, 634, 23, 15, 88, 232, 256, 191),
+  Percentage = c(73, 90, 63, 69, 70, 77, 27, 10, 37, 31, 30, 23))
+
+tiff("PD_vs_Cognition_eQTLs_and_noneQTLs.tiff", units="in", width=8, height=5, res=300)
+# jpeg("PD_vs_Cognition_eQTLs_and_noneQTLs.jpeg", units="in", width=8, height=5, res=300)
+ggplot(SNPs.df, aes(x = factor(Phenotype, level = x_order), y = Percentage, fill = Category)) +
+  geom_bar(stat="identity", position = "dodge") + theme_classic() +
+  #scale_fill_viridis(option = "D", discrete = TRUE) +
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        legend.text=element_text(size=14),
+        legend.title=element_text(size=16),
+        legend.title.align = 0.5,
+        legend.position = "bottom",
+        legend.direction = "horizontal",
+        axis.text=element_text(size=14, colour = "black"),
+        axis.title=element_text(size=16, colour = "black")) +
+  labs(fill = "SNPs:") +
+  geom_text(aes(y = Percentage, label = paste0("n=", Number)),
+            position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+            size = 5, fontface = 'italic') +
+  scale_fill_manual(values=c("#377eb8", "#B0B0B0"))
+#+ scale_fill_brewer(palette = "Paired")
+dev.off()
+```
+
+Functional genome annotation of eQTL SNPs (Supp. Figure 2b).
+
+```{eQTL SNPs genome annotation, echo=FALSE}
+# intergenic: dark gray #606060
+# intronic: #377eb8
+# exonic: #cc4546ff
+# ncRNA: #984ea3
+
+SNP_annotations <- read.table("data/snps/PD_vs_Cognition_SNP_annotations.txt", sep = "\t", header=TRUE)
+
+x_order <- c('ADHD', 'Anxiety', 'BD', 'SCZ', 'UD', 'Cognition')
+
+tiff("PD_vs_Cognition_eQTL_SNPs_genome_annotation.tiff", units="in", width=8, height=5, res=300)
+# jpeg("PD_vs_Cognition_eQTL_SNPs_genome_annotation.jpeg", units="in", width=8, height=5, res=300)
+ggplot(SNP_annotations, aes(x = factor(Phenotype, level = x_order), y = Percentage, fill = Category)) +
+  geom_bar(stat="identity", position = "dodge") + theme_classic() +
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.text=element_text(size=14),
+        legend.title =element_text(size=16),
+        legend.title.align = 0.5,
+        axis.text=element_text(size=14, colour = "black"),
+        axis.title=element_text(size=16, colour = "black")) +
+  labs(fill = "eQTL SNPs:") +
+  geom_text(aes(y = Percentage, label = paste0(Percentage, "%")),
+            position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+            size = 3.5) +
+  scale_fill_manual(values=c("#ef8a62", "#404040", "#b2182b", "#1F78B4"))
+dev.off()
+```
+
+Functional genome annotation of <1Mb, >1Mb and interchromossomal eQTL SNP-eGene interactions per phenotype (Supp. Fig. 3b).
+
+```{eQTL SNPs genome annotation, echo=FALSE}
+# intergenic: #404040
+# intronic: #b2182b
+# exonic: #ef8a62
+# ncRNA: #1F78B4
+
+snps_order <- c("intronic", "intergenic", "exonic", "ncRNA")
+snps_col <- c("#b2182b", "#404040", "#ef8a62", "#1F78B4")
+
+## ADHD
+ADHD.bar <- data.frame(
+  category = rep(c("A_intronic", "B_intergenic", "C_exonic", "D_ncRNA"), each=3),
+  group = rep(c("< 1Mb", "≥ 1Mb", "inter-chrom"),2),
+  n = c(103, 22, 26, 45, 14, 23, 23, 26, 1, 7, 1, 1),
+  percentage = c(35.3, 7.5, 8.9, 15.4, 4.8, 7.9, 7.9, 8.9, 0.3, 2.4, 0.3, 0.3)
+)
+
+# Grouped bar plot
+tiff("PD_vs_Cognition_ADHD_eQTLs_genome_annotation.tiff", units="in", width=13, height=5, res=300)
+ggplot(ADHD.bar, aes(x = group, y = percentage, fill = category)) + 
+  geom_bar(stat="identity", position = "dodge")+
+  theme_classic()+
+  #scale_fill_brewer(palette = "Paired")+
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.text=element_text(size=29, color = "black"),
+        axis.title=element_text(size=29, color = "black")) + 
+  scale_fill_manual(values=snps_col) +
+  labs(y = "Percentage") +
+  ylim(0, 37) +
+  geom_text(aes(y = percentage, label = paste0(percentage, "%")),
+            position=position_dodge(width=0.9), vjust=-0.25, color = "black",
+            size = 7)
+  #geom_text(aes(y = percentage, label = paste0("n=", n)),
+  #          position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+  #          size = 5, fontface = 'italic')
+dev.off()
+
+## Anx
+Anx.bar <- data.frame(
+  category = rep(c("A_intronic", "B_intergenic", "C_exonic", "D_ncRNA"), each=3),
+  group = rep(c("< 1Mb", "≥ 1Mb", "inter-chrom"),2),
+  n = c(406, 54, 96, 110, 37, 50, 47, 2, 8, 16, 4, 2),
+  percentage = c(48.8, 6.5, 11.5, 13.2, 4.4, 6.0, 5.6, 0.2, 1.0, 1.9, 0.5, 0.2)
+)
+
+# Grouped bar plot
+tiff("PD_vs_Cognition_Anx_eQTLs_genome_annotation.tiff", units="in", width=13, height=5, res=300)
+ggplot(Anx.bar, aes(x = group, y = percentage, fill = category)) + 
+  geom_bar(stat="identity", position = "dodge")+
+  theme_classic()+
+  #scale_fill_brewer(palette = "Paired")+
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.text=element_text(size=29, color = "black"),
+        axis.title=element_text(size=29, color = "black")) + 
+  scale_fill_manual(values=snps_col) +
+  labs(y = "Percentage") +
+  ylim(0, 51) +
+  geom_text(aes(y = percentage, label = paste0(percentage, "%")),
+            position=position_dodge(width=0.9), vjust=-0.25, color = "black",
+            size = 7)
+  #geom_text(aes(y = percentage, label = paste0("n=", n)),
+  #          position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+  #          size = 5, fontface = 'italic')
+dev.off()
+
+# BD
+BD.bar <- data.frame(
+  category = rep(c("A_intronic", "B_intergenic", "C_exonic", "D_ncRNA"), each=3),
+  group = rep(c("< 1Mb", "≥ 1Mb", "inter-chrom"),2),
+  n = c(212, 43, 41, 144, 33, 45, 49, 26, 3, 17, 2, 3),
+  percentage = c(34.3, 7.0, 6.6, 23.3, 5.3, 7.3, 7.9, 4.2, 0.5, 2.8, 0.3, 0.5)
+)
+
+# Grouped bar plot
+tiff("PD_vs_Cognition_BD_eQTLs_genome_annotation.tiff", units="in", width=13, height=5, res=300)
+ggplot(BD.bar, aes(x = group, y = percentage, fill = category)) + 
+  geom_bar(stat="identity", position = "dodge")+
+  theme_classic()+
+  #scale_fill_brewer(palette = "Paired")+
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.text=element_text(size=29, color = "black"),
+        axis.title=element_text(size=29, color = "black")) + 
+  scale_fill_manual(values=snps_col) +
+  labs(y = "Percentage") +
+  ylim(0, 36) +
+  geom_text(aes(y = percentage, label = paste0(percentage, "%")),
+            position=position_dodge(width=0.9), vjust=-0.25, color = "black",
+            size = 7)
+  #geom_text(aes(y = percentage, label = paste0("n=", n)),
+  #          position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+  #          size = 5, fontface = 'italic')
+dev.off()
+
+# UD
+UD.bar <- data.frame(
+  category = rep(c("A_intronic", "B_intergenic", "C_exonic", "D_ncRNA"), each=3),
+  group = rep(c("< 1Mb", "≥ 1Mb", "inter-chrom"),2),
+  n = c(663, 180, 185, 583, 304, 221, 125, 57, 17, 46, 32, 16),
+  percentage = c(27.3, 7.4, 7.6, 24.0, 12.5, 9.1, 5.1, 2.3, 0.7, 1.9, 1.3, 0.7)
+)
+
+# Grouped bar plot
+tiff("PD_vs_Cognition_UD_eQTLs_genome_annotation.tiff", units="in", width=13, height=5, res=300)
+ggplot(UD.bar, aes(x = group, y = percentage, fill = category)) + 
+  geom_bar(stat="identity", position = "dodge")+
+  theme_classic()+
+  #scale_fill_brewer(palette = "Paired")+
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.text=element_text(size=29, color = "black"),
+        axis.title=element_text(size=29, color = "black")) + 
+  scale_fill_manual(values=snps_col) +
+  labs(y = "Percentage") +
+  ylim(0, 29) +
+  geom_text(aes(y = percentage, label = paste0(percentage, "%")),
+            position=position_dodge(width=0.9), vjust=-0.25, color = "black",
+            size = 7)
+  #geom_text(aes(y = percentage, label = paste0("n=", n)),
+  #          position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+  #          size = 5, fontface = 'italic')
+dev.off()
+
+# SCZ
+SCZ.bar <- data.frame(
+  category = rep(c("A_intronic", "B_intergenic", "C_exonic", "D_ncRNA"), each=3),
+  group = rep(c("< 1Mb", "≥ 1Mb", "inter-chrom"),2),
+  n = c(793, 176, 185, 762, 212, 189, 156, 66, 19, 142, 40, 27),
+  percentage = c(28.7, 6.4, 6.7, 27.5, 7.7, 6.8, 5.6, 2.4, 0.7, 5.1, 1.4, 1.0)
+)
+
+# Grouped bar plot
+tiff("PD_vs_Cognition_SCH_eQTLs_genome_annotation.tiff", units="in", width=13, height=5, res=300)
+ggplot(SCZ.bar, aes(x = group, y = percentage, fill = category)) + 
+  geom_bar(stat="identity", position = "dodge")+
+  theme_classic()+
+  #scale_fill_brewer(palette = "Paired")+
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.text=element_text(size=29, color = "black"),
+        axis.title=element_text(size=29, color = "black")) + 
+  scale_fill_manual(values=snps_col) +
+  labs(y = "Percentage") +
+  ylim(0, 31) +
+  geom_text(aes(y = percentage, label = paste0(percentage, "%")),
+            position=position_dodge(width=0.9), vjust=-0.25, color = "black",
+            size = 7)
+  #geom_text(aes(y = percentage, label = paste0("n=", n)),
+  #          position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+  #          size = 5, fontface = 'italic')
+dev.off()
+
+# Cognition
+Cognition.bar <- data.frame(
+  category = rep(c("A_intronic", "B_intergenic", "C_exonic", "D_ncRNA"), each=3),
+  group = rep(c("< 1Mb", "≥ 1Mb", "inter-chrom"),2),
+  n = c(895, 161, 222, 670, 171, 159, 160, 26, 22, 75, 14, 14),
+  percentage = c(34.6, 6.2, 8.6, 25.9, 6.6, 6.1, 6.2, 1.0, 0.8, 2.9, 0.5, 0.5)
+)
+
+# Grouped bar plot
+tiff("PD_vs_Cognition_Cognition_eQTLs_genome_annotation.tiff", units="in", width=13, height=5, res=300)
+ggplot(Cognition.bar, aes(x = group, y = percentage, fill = category)) + 
+  geom_bar(stat="identity", position = "dodge")+
+  theme_classic()+
+  #scale_fill_brewer(palette = "Paired")+
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.text=element_text(size=29, color = "black"),
+        axis.title=element_text(size=29, color = "black")) + 
+  scale_fill_manual(values=snps_col) +
+  labs(y = "Percentage") +
+  ylim(0, 37) +
+  geom_text(aes(y = percentage, label = paste0(percentage, "%")),
+            position=position_dodge(width=0.9), vjust=-0.25, color = "black",
+            size = 7)
+  #geom_text(aes(y = percentage, label = paste0("n=", n)),
+  #          position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+  #          size = 5, fontface = 'italic')
+dev.off()
+```
+
+Check eQTL SNP overlaps among psychiatric disorders and cognition (Fig. 3b).
+
+```{eQTL SNP overlaps, echo=FALSE}
+ADHD_esnps <- readLines("data/snps/ADHD_eQTL_SNPs.txt")
+Anxiety_esnps <- readLines("data/snps/Anx_eQTL_SNPs.txt")
+BD_esnps <- readLines("data/snps/BD_eQTL_SNPs.txt")
+UD_esnps <- readLines("data/snps/UD_eQTL_SNPs.txt")
+SCZ_esnps <- readLines("data/snps/SCH_eQTL_SNPs.txt")
+Cognition_esnps <- readLines("data/snps/Cognition_eQTL_SNPs.txt")
+
+list_esnps <- list("ADHD" = ADHD_esnps, "BD" = BD_esnps, "Anxiety" = Anxiety_esnps, "SCZ" = SCZ_esnps, "UD" = UD_esnps, "Cognition" = Cognition_esnps)
+
+tiff("PD_vs_Cognition_eQTL_SNPs_overlap_by_degree.tiff", units="in", width=9, height=6, res=300)
+# jpeg("PD_vs_Cognition_eQTL_SNPs_overlap_by_degree.jpeg", units="in", width=9, height=6, res=300)
+upset(fromList(list_esnps), sets = c("Cognition","UD", "SCZ", "BD", "Anxiety", "ADHD"), keep.order = TRUE, sets.x.label = "Number of eQTLs", mainbar.y.label = "Number of shared eQTLs", point.size=4.5, nintersects = NA, text.scale = 2.2, group.by = "degree", order.by = "degree", main.bar.color = "#A9A9A9", sets.bar.color = c("#fec44f","#ec7014","#238443", "#3182bd", "#c51b8a", "#701e7fff"))
+dev.off()
+```
+
+## 5. eGenes overlaps
+
+Extract eGene list (the 4th column) from `results/codes3d_output/ADHD_significant_eqtls.txt`. Remove duplicates. Repeat this step for other phenotypes.
+
+Check eGene overlaps among psychiatric disorders and cognition (Fig. 3c)
+
+```{eGenes overlap, echo=FALSE}
+ADHD_egenes <- readLines("data/eGenes/ADHD_eGenes.txt")
+Anxiety_egenes <- readLines("data/eGenes/Anx_eGenes.txt")
+BD_egenes <- readLines("data/eGenes/BD_eGenes.txt")
+UD_egenes <- readLines("data/eGenes/UD_eGenes.txt")
+SCZ_egenes <- readLines("data/eGenes/SCZ_eGenes.txt")
+Cognition_egenes <- readLines("data/eGenes/Cognition_eGenes.txt")
+
+list_egenes <- list("ADHD" = ADHD_egenes, "BD" = BD_egenes, "Anxiety" = Anxiety_egenes, "SCZ" = SCZ_egenes, "UD" = UD_egenes, "Cognition" = Cognition_egenes)
+
+tiff("PD_vs_Cognition_eGenes_overlap_by_degree.tiff", units="in", width=14, height=6, res=300)
+# jpeg("PD_vs_Cognition_eGenes_overlap_by_degree.jpeg", units="in", width=14, height=6, res=300)
+upset(fromList(list_egenes), sets = c("Cognition","UD", "SCZ", "BD", "Anxiety", "ADHD"), keep.order = TRUE, sets.x.label = "Number of eGenes", mainbar.y.label = "Number of shared eGenes", point.size=3.5, nintersects = NA, main.bar.color = "#A9A9A9", text.scale = 2.0, group.by = "degree", order.by = "degree", sets.bar.color = c("#fec44f","#ec7014","#238443", "#3182bd", "#c51b8a", "#701e7fff"))
+dev.off()
+```
+
+## 6. Bootstrapping analysis of eGene overlaps
+
+Run `python data/scripts/bootstrap_eGenes.py` to perform boostrapping analysis of 57 eGene overlaps among psychiatric disorders and cognition. all_genes.txt contains the whole list of genes across the genome (Supp. Fig. 4).
+
+```{Bootstrapping_eGenes, echo=FALSE}
+egene_bootstraps <- read.table("data/eGenes/statistics_egenes.txt", sep = "\t", header=TRUE)
+egene_overlaps <- read.table("data/eGenes/PD_vs_Cognition_eGenes_overlaps.txt", sep = "\t", header=TRUE)
+
+# jpeg("PD_vs_Cognition_eGenes_bootstrapping_with_actual_overlap.jpeg", units="in", width=11, height=7, res=300)
+tiff("PD_vs_Cognition_eGenes_bootstrapping_with_actual_overlap.tiff", units="in", width=11, height=7, res=300)
+egene_boots <- ggplot(stack(egene_bootstraps),
+                      aes(x = factor(ind, levels = rev(names(egene_bootstraps))),
+                          y = values)) +
+  geom_boxplot(outlier.colour = "black", 
+               #outlier.shape = NA,
+               #outlier.shape = 1, 
+               outlier.alpha = 0.1,
+               outlier.fill = "red",
+               outlier.size = 0.5,
+               #colour = "red",
+               fill = "grey") +
+  scale_y_continuous(name = "Number of shared eGenes", limits = c(0, 390)) +
+  scale_x_discrete(name = "Bootstrapped eGene overlaps") + 
+  geom_point(data=egene_overlaps, aes(x=Overlap, y=Number), colour = "blue") + # Add actual overlap
+  #geom_jitter(width = 0.2) +
+  #coord_cartesian(ylim = c(0, 40)) +
+  #scale_fill_manual(values = c("grey80", "grey20")) +
+  #scale_y_continuous(limits = c(0, 620))
+  theme_bw()
+
+egene_boots + theme(axis.line.x = element_line(size = 0.5, colour = "black"),
+              axis.line.y = element_line(size = 0.5, colour = "black"),
+              axis.line = element_line(size=1, colour = "black"),
+              #axis.text.x = element_text(angle = 90, hjust=0.95,vjust=0.2),
+              #axis.title.x = element_blank(),
+              panel.grid = element_blank(),
+              panel.grid.major = element_blank(),
+              panel.grid.minor = element_blank(),
+              panel.border = element_blank(),
+              panel.background = element_blank()) +
+  rotate_x_text(angle = 45)
+dev.off()
+```
+
+## 7. 33 shared eGenes and LD analysis of eQTLs that impact on the expression of these 33 eGenes
+
+To get 33 shared eGenes run `python3 -c 'import sys;print("".join(sorted(set.intersection(*[set(open(a).readlines()) for a in sys.argv[1:]]))))' data/eGenes/ADHD_eGenes.txt data/eGenes/Anx_eGenes.txt data/eGenes/BD_eGenes.txt data/eGenes/UD_eGenes.txt data/eGenes/SCZ_eGenes.txt data/eGenes/Cognition_eGenes.txt` (Supp. Fig. 5).
+
+Extract all eQTL SNPs from chr 3, 6 and 10 that regulate 33 shared eGenes ().
+Perform LD analysis (R-squared and D-prime) using LDlink 3.7 (https://ldlink.nci.nih.gov/) and visualize the results (Supp. Fig. 6 & 7).
+
+```{LD analysis, echo=FALSE}
+
+get_lower_tri<-function(ld_dt){
+  ld_dt[upper.tri(ld_dt)] <- NA
+  return(ld_dt)
+}
+
+get_upper_tri<-function(ld_dt){
+  ld_dt[lower.tri(ld_dt, diag=T)] <- NA
+  return(ld_dt)
+}
+
+## SNPs on Chr3
+snps_chr3 <- readLines("data/results/LD/chr3_all_snps.txt")
+
+# R2
+# No LD info for rs13094915 --> removed from the analysis
+ld_data_r_chr3 <- read.delim("data/results/LD/r2_all_chr3.txt", header = T)
+lower_tri_r_chr3 <- get_lower_tri(ld_data_r_chr3)
+snps_chr3_sorted <- lower_tri_r_chr3$RS_number
+lower_ld_melted_r_chr3 <- melt(lower_tri_r_chr3, na.rm = F)
+
+tiff("PD_vs_Cognition_LD_R2_chr3.tiff", units="in", width=8, height=8, res=300)
+ggplot(data = lower_ld_melted_r_chr3, 
+       aes(y=factor(RS_number, levels=lower_tri_r_chr3$RS_number), x=variable,
+           fill=value)) +
+  geom_tile(color='white') +
+  scale_fill_gradient2(low='white', high = 'red',space='Lab',
+                       name= bquote('LD score '~(R^2)), na.value='transparent') +
+  scale_x_discrete("") +
+  scale_y_discrete("") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90))#,
+        #legend.position = "none") +
+  coord_fixed()
+dev.off()
+
+# D'
+# No LD info for rs13094915 --> removed from the analysis
+ld_data_d_chr3 <- read.delim("data/results/LD/d_prime_all_chr3.txt", header = T)
+upper_tri_d_chr3 <- get_upper_tri(ld_data_d_chr3)
+upper_tri_d_chr3$RS_number <- snps_chr3_sorted
+upper_ld_melted_d_chr3 <- melt(upper_tri_d_chr3, na.rm = TRUE)
+
+tiff("PD_vs_Cognition_LD_D_chr3.tiff", units="in", width=8, height=8, res=300)
+ggplot(data = upper_ld_melted_d_chr3,
+       aes(y=factor(RS_number, levels=upper_tri_d_chr3$RS_number), x=variable,
+           fill=value)) + 
+  geom_tile(color='white') + 
+  scale_fill_gradient2(low='white', high = '#606060',space='Lab',
+                       name="LD score (D')", na.value='transparent') +
+  scale_x_discrete("") +
+  scale_y_discrete("") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=90))#,
+        #legend.position = "none") +
+  coord_fixed()
+dev.off()
+
+## SNPs on Chr6
+snps_chr6 <- readLines("data/results/LD/chr6_all_snps.txt")
+
+# R2
+# No LD info for rs78110044 and rs111639056  --> removed from the analysis
+ld_data_r_chr6 <- read.delim("data/results/LD/r2_all_chr6.txt", header = T)
+lower_tri_r_chr6 <- get_lower_tri(ld_data_r_chr6)
+snps_chr6_sorted <- lower_tri_r_chr6$RS_number
+lower_ld_melted_r_chr6 <- melt(lower_tri_r_chr6, na.rm = F)
+
+tiff("PD_vs_Cognition_LD_R2_chr6.tiff", units="in", width=15, height=15, res=300)
+ggplot(data = lower_ld_melted_r_chr6, 
+       aes(y=factor(RS_number, levels=lower_tri_r_chr6$RS_number), x=variable,
+           fill=value)) +
+  geom_tile(color='white') +
+  scale_fill_gradient2(low='white', high = 'red',space='Lab',
+                       name= bquote('LD score '~(R^2)), na.value='transparent') +
+  scale_x_discrete("") +
+  scale_y_discrete("") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90))#,
+        # legend.position = "none") +
+  coord_fixed()
+dev.off()
+
+# D'
+# No LD info for rs78110044 and rs111639056  --> removed from the analysis
+ld_data_d_chr6 <- read.delim("data/results/LD/d_prime_all_chr6.txt", header = T)
+upper_tri_d_chr6 <- get_upper_tri(ld_data_d_chr6)
+upper_tri_d_chr6$RS_number <- snps_chr6_sorted
+upper_ld_melted_d_chr6 <- melt(upper_tri_d_chr6, na.rm = TRUE)
+
+tiff("PD_vs_Cognition_LD_D_chr6.tiff", units="in", width=15, height=15, res=300)
+ggplot(data = upper_ld_melted_d_chr6,
+       aes(y=factor(RS_number, levels=upper_tri_d_chr6$RS_number), x=variable,
+           fill=value)) + 
+  geom_tile(color='white') + 
+  scale_fill_gradient2(low='white', high = '#606060',space='Lab',
+                       name="LD score (D')", na.value='transparent') +
+  scale_x_discrete("") +
+  scale_y_discrete("") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=90))#,
+        # legend.position = "none") +
+  coord_fixed()
+dev.off()
+
+## SNPs on Chr10
+snps_chr10 <- readLines("data/results/LD/chr10_all_snps.txt")
+
+# R2
+ld_data_r_chr10 <- read.delim("data/results/LD/r2_all_chr10.txt", header = T)
+lower_tri_r_chr10 <- get_lower_tri(ld_data_r_chr10)
+snps_chr10_sorted <- lower_tri_r_chr10$RS_number
+lower_ld_melted_r_chr10 <- melt(lower_tri_r_chr10, na.rm = F)
+
+tiff("PD_vs_Cognition_LD_R2_chr10.tiff", units="in", width=8, height=8, res=300)
+ggplot(data = lower_ld_melted_r_chr10, 
+       aes(y=factor(RS_number, levels=lower_tri_r_chr10$RS_number), x=variable,
+           fill=value)) +
+  geom_tile(color='white') +
+  scale_fill_gradient2(low='white', high = 'red',space='Lab',
+                       name= bquote('LD score '~(R^2)), na.value='transparent') +
+  scale_x_discrete("") +
+  scale_y_discrete("") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 90))#,
+        # legend.position = "none") +
+  coord_fixed()
+dev.off()
+
+# D'
+# No LD info for rs13094915 --> removed from the analysis
+ld_data_d_chr10 <- read.delim("data/results/LD/d_prime_all_chr10.txt", header = T)
+upper_tri_d_chr10 <- get_upper_tri(ld_data_d_chr10)
+upper_tri_d_chr10$RS_number <- snps_chr10_sorted
+upper_ld_melted_d_chr10 <- melt(upper_tri_d_chr10, na.rm = TRUE)
+
+tiff("PD_vs_Cognition_LD_D_chr10.tiff", units="in", width=8, height=8, res=300)
+ggplot(data = upper_ld_melted_d_chr10,
+       aes(y=factor(RS_number, levels=upper_tri_d_chr10$RS_number), x=variable,
+           fill=value)) + 
+  geom_tile(color='white') + 
+  scale_fill_gradient2(low='white', high = '#606060',space='Lab',
+                       name="LD score (D')", na.value='transparent') +
+  scale_x_discrete("") +
+  scale_y_discrete("") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=90))#,
+        # legend.position = "none") +
+  coord_fixed()
+dev.off()
+```
+
+## 8. Gene Ontology (GO) analysis of eGenes
+
+GO analysis was performed using g:GOSt core tool of the g:Profiler tool set (https://biit.cs.ut.ee/gprofiler/) (Supp. Fig. 8).
+
+## 9. Pathway analysis
+
+Pathway analysis was performed using Advaita Bio’s iPathwayGuide (https://www.advaitabio.com/ipathwayguide, 09/13/2019).
+
+## 10. Pathway overlaps
+
+Check iPathways overlaps among psychiatric disorders and cognition (Fig. 3d)
+
+```{iPathways overlap, echo=FALSE}
+# Indicate in black iPathways without shared genes
+ADHD_ipaths <- readLines("data/iPathways/ADHD_KEGG.txt")
+Anxiety_ipaths <- readLines("data/iPathways/Anx_KEGG.txt")
+BD_ipaths <- readLines("data/iPathways/BD_KEGG.txt")
+UD_ipaths <- readLines("data/iPathways/UD_KEGG.txt")
+SCZ_ipaths <- readLines("data/iPathways/SCZ_KEGG.txt")
+Cognition_ipaths <- readLines("data/iPathways/Cognition_KEGG.txt")
+
+list_ipaths <- list("ADHD" = ADHD_ipaths, "BD" = BD_ipaths, "Anxiety" = Anxiety_ipaths, "SCZ" = SCZ_ipaths, "UD" = UD_ipaths, "Cognition" = Cognition_ipaths)
+
+tiff("PD_vs_Cognition_iPathways_overlap_by_degree_no-genes.tiff", units="in", width=10, height=6, res=300)
+# jpeg("PD_vs_Cognition_iPathways_overlap_by_degree_no-genes.jpeg", units="in", width=10, height=6, res=300)
+upset(fromList(list_ipaths), sets = c("Cognition","UD", "SCZ", "BD", "Anxiety", "ADHD"), keep.order = TRUE, sets.x.label = "Number of pathways", mainbar.y.label = "Number of shared pathways", point.size=3.5, nintersects = NA, main.bar.color = "#A9A9A9", text.scale = 2.0, group.by = "degree", order.by = "degree", sets.bar.color = c("#fec44f","#ec7014","#238443", "#3182bd", "#c51b8a", "#701e7fff"))
+dev.off()
+```
+
+## 11. Phenotype-specific and shared eGenes in 61 shared pathways
+
+Check phenotype-specific and shared eGenes in 61 shared pathways (Supp. Fig. 9).
+
+```{eGenes in shared pathways, echo=FALSE}
+egenes_in_paths <- read.table("data/results/Shared_and_unique_genes_in_shared_paths.txt", sep = "\t", header=TRUE)
+
+df <- melt(egenes_in_paths, id.var="Pathway")
+
+# jpeg("Shared_and_unique_genes_in_shared_paths.jpeg", units="in", width=13, height=9, res=300)
+tiff("Shared_and_unique_genes_in_shared_paths.tiff", units="in", width=13, height=9, res=300)
+ggplot(df, aes(x = Pathway, y = value, fill = variable)) +
+  geom_bar(stat = "identity") +
+  scale_fill_brewer(palette = "Paired", labels = c("Total eGenes", "Shared eGenes", "Phenotype-specific eGenes")) +
+  #theme_bw() +
+  theme_classic() +
+  theme(axis.line.x = element_line(size = 0.5, colour = "black"),
+        axis.line.y = element_line(size = 0.5, colour = "black"),
+        axis.line = element_line(size=1, colour = "black"),
+        axis.text.x = element_text(size = 10, colour = "black"),
+        axis.text.y = element_text(size = 10, colour = "black"),
+        axis.title.y = element_text(size = 10, colour = "black"),
+        #axis.text.x = element_text(angle = 90, hjust=0.95,vjust=0.2),
+        #axis.title.x = element_blank(),
+        panel.grid = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank(),
+        plot.title = element_blank(),
+        legend.title = element_blank(),
+        axis.title.x = element_blank(),
+        legend.position = "bottom",
+        legend.direction = "horizontal",
+        legend.text = element_text(size = 12, colour = "black")) +
+  rotate_x_text(angle = 90) +
+  labs(y = "Number of eGenes")
+dev.off()
+```
+
+## 12. Bootstrapping analysis of iPathways overlaps
+
+Run `python data/scripts/bootstrap_paths.py` to perform boostrapping analysis of 57 pathway overlaps among psychiatric disorders and cognition. KEGG_paths.txt contains the whole list of KEGG pathways in KEGG database (Supp. Fig. 10).
+
+```{Bootstrapping_paths, echo=FALSE}
+path_bootstraps <- read.table("data/iPathways/statistics_paths.txt", sep = "\t", header=TRUE)
+path_overlaps <- read.table("data/iPathways/PD_vs_Cognition_paths_overlaps.txt", sep = "\t", header=TRUE)
+
+# jpeg("PD_vs_Cognition_paths_bootstrapping_with_actual_overlap.jpeg", units="in", width=11, height=7, res=300)
+tiff("PD_vs_Cognition_paths_bootstrapping_with_actual_overlap.tiff", units="in", width=11, height=7, res=300)
+path_boots <- ggplot(stack(path_bootstraps),
+                aes(x = factor(ind, levels = rev(names(path_bootstraps))), y = values)) +
+  geom_boxplot(outlier.colour = "black", 
+               #outlier.shape = NA,
+               #outlier.shape = 1, 
+               outlier.alpha = 0.1,
+               outlier.fill = "red",
+               outlier.size = 0.5,
+               #colour = "red",
+               fill = "grey") +
+  scale_y_continuous(name = "Number of shared pathways", limits = c(0, 390)) +
+  scale_x_discrete(name = "Bootstrapped pathway overlaps") + 
+  geom_point(data=path_overlaps, aes(x=Overlap, y=Number), colour = "blue") + # Add actual overlap
+  #geom_jitter(width = 0.2) +
+  #coord_cartesian(ylim = c(0, 40)) +
+  #scale_fill_manual(values = c("grey80", "grey20")) +
+  #scale_y_continuous(limits = c(0, 620))
+  theme_bw()
+
+path_boots + theme(axis.line.x = element_line(size = 0.5, colour = "black"),
+              axis.line.y = element_line(size = 0.5, colour = "black"),
+              axis.line = element_line(size=1, colour = "black"),
+              #axis.text.x = element_text(angle = 90, hjust=0.95,vjust=0.2),
+              #axis.title.x = element_blank(),
+              panel.grid = element_blank(),
+              panel.grid.major = element_blank(),
+              panel.grid.minor = element_blank(),
+              panel.border = element_blank(),
+              panel.background = element_blank()) +
+  rotate_x_text(angle = 45)
+dev.off()
+
+## All KEGG paths
+library(KEGGREST)
+listDatabases()
+pathways <- keggList("pathway")
+write.table(pathways, file="data/iPathways/KEGG_paths.txt", sep="\t", row.names=FALSE, col.names=FALSE)
+```
+
+## 13. Drug-gene interaction analysis
+
+Create ADHD_output directory. Run `python data/scripts/get_dgi_drug_targets.py -g data/results/codes3d_output/ADHD_significant_eqtls.txt -o data/results/DGIdb_output/ADHD_output` to query the Drug Gene Interaction database (DGIdb) (http://www.dgidb.org/). Repeat this step for all six phenotypes.
+
+## 14. dGene overlaps
+
+Check druggable eGene (dGene) overlaps among psychiatric disorders and cognition 
+(Supp. Fig. 13).
+
+```{dGenes overlap, echo=FALSE}
+ADHD_dgenes <- readLines("data/dGenes/ADHD_dGenes.txt")
+Anxiety_dgenes <- readLines("data/dGenes/Anx_dGenes.txt")
+BD_dgenes <- readLines("data/dGenes/BD_dGenes.txt")
+UD_dgenes <- readLines("data/dGenes/UD_dGenes.txt")
+SCZ_dgenes <- readLines("data/dGenes/SCZ_dGenes.txt")
+Cognition_dgenes <- readLines("data/dGenes/Cognition_dGenes.txt")
+
+list_dgenes <- list("ADHD" = ADHD_dgenes, "BD" = BD_dgenes, "Anxiety" = Anxiety_dgenes, "SCZ" = SCZ_dgenes, "UD" = UD_dgenes, "Cognition" = Cognition_dgenes)
+
+tiff("PD_vs_Cognition_dGenes_overlap_by_degree.tiff", units="in", width=13, height=6, res=300)
+# jpeg("PD_vs_Cognition_dGenes_overlap_by_degree.jpeg", units="in", width=13, height=6, res=300)
+upset(fromList(list_dgenes), sets = c("Cognition","UD", "SCZ", "BD", "Anxiety", "ADHD"), keep.order = TRUE, sets.x.label = "Number of dGenes", mainbar.y.label = "Number of shared dGenes", point.size=3.5, nintersects = NA, main.bar.color = "#A9A9A9", text.scale = 2.0, group.by = "degree", order.by = "degree", sets.bar.color = c("#fec44f","#ec7014","#238443", "#3182bd", "#c51b8a", "#701e7fff"))
+dev.off()
+```
+
+## 15. Tissue-specificity among psychiatric disorders and cognition
+
+Check tissue-specific <1Mb, ≥1Mb and inter-chrom eQTL-eGene interactions among psychiatric disorders and cognition (Supp. Fig. 14).
+
+```{Tissue-specificity, echo=FALSE}
+#tissues <- read.table("Tissue_specificity.txt", sep = "\t", header=TRUE)
+ADHD_tissues <- read.table("data/tissue_specificity/ADHD_tissue_specificity_new.txt", sep = "\t", header=TRUE)
+Anx_tissues <- read.table("data/tissue_specificity/Anx_tissue_specificity_new.txt", sep = "\t", header=TRUE)
+BD_tissues <- read.table("data/tissue_specificity/BD_tissue_specificity_new.txt", sep = "\t", header=TRUE)
+UD_tissues <- read.table("data/tissue_specificity/UD_tissue_specificity_new.txt", sep = "\t", header=TRUE)
+SCZ_tissues <- read.table("data/tissue_specificity/SCZ_tissue_specificity_new.txt", sep = "\t", header=TRUE)
+Cognition_tissues <- read.table("data/tissue_specificity/Cognition_tissue_specificity_new.txt", sep = "\t", header=TRUE)
+
+# Order by organismal systems
+tissue_order = c('Adipose - Subcutaneous', 'Adipose - Visceral (Omentum)', 'Artery - Aorta', 'Artery - Coronary', 'Artery - Tibial', 'Heart - Atrial Appendage', 'Heart - Left Ventricle', 'Whole Blood', 'Colon - Sigmoid', 'Colon - Transverse', 'Esophagus - Gastroesophageal Junction', 'Esophagus - Mucosa', 'Esophagus - Muscularis', 'Liver', 'Small Intestine - Terminal Ileum', 'Stomach', 'Adrenal Gland', 'Pancreas', 'Pituitary', 'Thyroid', 'Breast - Mammary Tissue', 'Minor Salivary Gland', 'Skin - Not Sun Exposed (Suprapubic)', 'Skin - Sun Exposed (Lower leg)', 'Spleen', 'Muscle - Skeletal', 'Brain - Amygdala', 'Brain - Anterior cingulate cortex (BA24)', 'Brain - Caudate (basal ganglia)', 'Brain - Cerebellar Hemisphere', 'Brain - Cerebellum', 'Brain - Cortex', 'Brain - Frontal Cortex (BA9)', 'Brain - Hippocampus', 'Brain - Hypothalamus', 'Brain - Nucleus accumbens (basal ganglia)', 'Brain - Putamen (basal ganglia)', 'Brain - Spinal cord (cervical c-1)', 'Brain - Substantia nigra', 'Nerve - Tibial', 'Ovary', 'Prostate', 'Testis', 'Uterus', 'Vagina', 'Lung', 'Cells - EBV-transformed lymphocytes', 'Cells - Transformed fibroblasts')
+
+### ADHD
+#tiff("ADHD_tissue_specificity.tiff", units="in", width=7, height=7, res=300)
+tiff("ADHD_tissue_specificity.tiff", units="in", width=3, height=7, res=300) # without tissues labeles
+ggplot(ADHD_tissues, aes(x=(factor(New_tissue, level = rev(tissue_order))), y=Number, fill = Interactions)) +
+  geom_bar(stat = 'identity') +
+  theme_classic() +
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(), # without tissues labeles
+        axis.title.y = element_blank(),
+        legend.position = "none",
+        legend.direction = "horizontal",
+        legend.text=element_text(size=8),
+        legend.title =element_text(size=9),
+        # legend.title.align = 0.5,
+        axis.text=element_text(size=9, colour = "black"),
+        axis.title=element_text(size=9, colour = "black")) +
+  # geom_text(aes(y = Percentage, label = paste0(Percentage, "%")),
+            # position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+            # size = 4) +
+  coord_flip() + 
+  scale_y_continuous(limits = c(0, 80)) +
+  scale_fill_manual('eQTL-eGene interactions:', values = c("#ef8a62", "#b2182b", "#404040")) +
+  facet_wrap(~Phenotype, nrow=1)
+  #labs(y = "Number of eQTL-eGene interactions")
+dev.off()
+
+### Anx
+#tiff("Anx_tissue_specificity.tiff", units="in", width=7, height=7, res=300)
+tiff("Anx_tissue_specificity.tiff", units="in", width=3, height=7, res=300) # without tissues labeles
+ggplot(Anx_tissues, aes(x=(factor(New_tissue, level = rev(tissue_order))), y=Number, fill = Interactions)) +
+  geom_bar(stat = 'identity') +
+  theme_classic() +
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(), # without tissues labeles
+        axis.title.y = element_blank(),
+        legend.position = "none",
+        legend.direction = "horizontal",
+        legend.text=element_text(size=8),
+        legend.title =element_text(size=9),
+        # legend.title.align = 0.5,
+        axis.text=element_text(size=9, colour = "black"),
+        axis.title=element_text(size=9, colour = "black")) +
+  # geom_text(aes(y = Percentage, label = paste0(Percentage, "%")),
+            # position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+            # size = 4) +
+  coord_flip() + 
+  scale_y_continuous(limits = c(0, 210)) +
+  scale_fill_manual('eQTL-eGene interactions:', values = c("#ef8a62", "#b2182b", "#404040")) +
+  facet_wrap(~Phenotype, nrow=1)
+  #labs(y = "Number of eQTL-eGene interactions")
+dev.off()
+
+### BD
+#tiff("BD_tissue_specificity.tiff", units="in", width=7, height=7, res=300)
+tiff("BD_tissue_specificity.tiff", units="in", width=3, height=7, res=300) # without tissues labeles
+ggplot(BD_tissues, aes(x=(factor(New_tissue, level = rev(tissue_order))), y=Number, fill = Interactions)) +
+  geom_bar(stat = 'identity') +
+  theme_classic() +
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(), # without tissues labeles
+        axis.title.y = element_blank(),
+        legend.position = "none",
+        legend.direction = "horizontal",
+        legend.text=element_text(size=8),
+        legend.title =element_text(size=9),
+        # legend.title.align = 0.5,
+        axis.text=element_text(size=9, colour = "black"),
+        axis.title=element_text(size=9, colour = "black")) +
+  # geom_text(aes(y = Percentage, label = paste0(Percentage, "%")),
+            # position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+            # size = 4) +
+  coord_flip() + 
+  scale_y_continuous(limits = c(0, 160)) +
+  scale_fill_manual('eQTL-eGene interactions:', values = c("#ef8a62", "#b2182b", "#404040")) +
+  facet_wrap(~Phenotype, nrow=1)
+  #labs(y = "Number of eQTL-eGene interactions")
+dev.off()
+
+### UD
+#tiff("UD_tissue_specificity.tiff", units="in", width=7, height=7, res=300)
+tiff("UD_tissue_specificity.tiff", units="in", width=3, height=7, res=300) # without tissues labeles
+ggplot(UD_tissues, aes(x=(factor(New_tissue, level = rev(tissue_order))), y=Number, fill = Interactions)) +
+  geom_bar(stat = 'identity') +
+  theme_classic() +
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(), # without tissues labeles
+        axis.title.y = element_blank(),
+        legend.position = "none",
+        legend.direction = "horizontal",
+        legend.text=element_text(size=8),
+        legend.title =element_text(size=9),
+        # legend.title.align = 0.5,
+        axis.text=element_text(size=9, colour = "black"),
+        axis.title=element_text(size=9, colour = "black")) +
+  # geom_text(aes(y = Percentage, label = paste0(Percentage, "%")),
+            # position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+            # size = 4) +
+  coord_flip() + 
+  scale_y_continuous(limits = c(0, 620)) +
+  scale_fill_manual('eQTL-eGene interactions:', values = c("#ef8a62", "#b2182b", "#404040")) +
+  facet_wrap(~Phenotype, nrow=1)
+  #labs(y = "Number of eQTL-eGene interactions")
+dev.off()
+
+### SCZ
+#tiff("SCZ_tissue_specificity.tiff", units="in", width=7, height=7, res=300)
+tiff("SCZ_tissue_specificity.tiff", units="in", width=3, height=7, res=300) # without tissues labeles
+ggplot(SCZ_tissues, aes(x=(factor(New_tissue, level = rev(tissue_order))), y=Number, fill = Interactions)) +
+  geom_bar(stat = 'identity') +
+  theme_classic() +
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(), # without tissues labeles
+        axis.title.y = element_blank(),
+        legend.position = "none",
+        legend.direction = "horizontal",
+        legend.text=element_text(size=8),
+        legend.title =element_text(size=9),
+        # legend.title.align = 0.5,
+        axis.text=element_text(size=9, colour = "black"),
+        axis.title=element_text(size=9, colour = "black")) +
+  # geom_text(aes(y = Percentage, label = paste0(Percentage, "%")),
+            # position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+            # size = 4) +
+  coord_flip() + 
+  scale_y_continuous(limits = c(0, 740)) +
+  scale_fill_manual('eQTL-eGene interactions:', values = c("#ef8a62", "#b2182b", "#404040")) +
+  facet_wrap(~Phenotype, nrow=1)
+  #labs(y = "Number of eQTL-eGene interactions")
+dev.off()
+
+### Cognition
+#tiff("Cognition_tissue_specificity.tiff", units="in", width=7, height=7, res=300)
+tiff("Cognition_tissue_specificity.tiff", units="in", width=3, height=7, res=300) # without tissues labeles
+ggplot(Cognition_tissues, aes(x=(factor(New_tissue, level = rev(tissue_order))), y=Number, fill = Interactions)) +
+  geom_bar(stat = 'identity') +
+  theme_classic() +
+  theme(plot.title = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(), # without tissues labeles
+        axis.title.y = element_blank(),
+        legend.position = "none",
+        legend.direction = "horizontal",
+        legend.text=element_text(size=8),
+        legend.title =element_text(size=9),
+        # legend.title.align = 0.5,
+        axis.text=element_text(size=9, colour = "black"),
+        axis.title=element_text(size=9, colour = "black")) +
+  # geom_text(aes(y = Percentage, label = paste0(Percentage, "%")),
+            # position=position_dodge(width=0.9), vjust=-0.25, color = "black", 
+            # size = 4) +
+  coord_flip() + 
+  scale_y_continuous(limits = c(0, 580)) +
+  scale_fill_manual('eQTL-eGene interactions:', values = c("#ef8a62", "#b2182b", "#404040")) +
+  facet_wrap(~Phenotype, nrow=1)
+  #labs(y = "Number of eQTL-eGene interactions")
+dev.off()
+```
+
+## 15. Correlation analysis between GTEx tissue sample size and number of eQTL-eGenes interactions
+
+Check the correlation between GTEx tissue sample size and number of eQTL-eGenes interactionsamong psychiatric disorders and cognition (Supp. Fig. 15).
+
+```{Corellation analysis, echo=FALSE}
+ADHD_data <- read.table("data/correlation/ADHD_Correlation_analysis.txt", sep = "\t", header=TRUE)
+Anx_data <- read.table("data/correlation/Anx_Correlation_analysis.txt", sep = "\t", header=TRUE)
+BD_data <- read.table("data/correlation/BD_Correlation_analysis.txt", sep = "\t", header=TRUE)
+UD_data <- read.table("data/correlation/UD_Correlation_analysis.txt", sep = "\t", header=TRUE)
+SCZ_data <- read.table("data/correlation/SCZ_Correlation_analysis.txt", sep = "\t", header=TRUE)
+Cognition_data <- read.table("data/correlation/Cognition_Correlation_analysis.txt", sep = "\t", header=TRUE)
+
+phe <- c("Cognition","UD", "SCZ", "BD", "Anx", "ADHD")
+col <- c("#fec44f","#ec7014","#238443", "#3182bd", "#c51b8a", "#701e7fff")
+
+### ADHD
+## < 1Mb eQTL-eGenes interactions
+tiff("ADHD_eGenes_correlation_analysis_less1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(ADHD_data, aes(x=Sample_size, y=less1Mb)) + 
+  geom_point(size = 2.5, color="#701e7fff") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#701e7fff") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## ≥ 1Mb eQTL-eGenes interactions
+tiff("ADHD_eGenes_correlation_analysis_more1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(ADHD_data, aes(x=Sample_size, y=more1Mb)) + 
+  geom_point(size = 2.5, color="#701e7fff") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#701e7fff") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## interchromosomal eQTL-eGenes interactions
+tiff("ADHD_eGenes_correlation_analysis_interchrom_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(ADHD_data, aes(x=Sample_size, y=interchrom)) + 
+  geom_point(size = 2.5, color="#701e7fff") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#701e7fff") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+### Anx
+## < 1Mb eQTL-eGenes interactions
+tiff("Anx_eGenes_correlation_analysis_less1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(Anx_data, aes(x=Sample_size, y=less1Mb)) + 
+  geom_point(size = 2.5, color="#c51b8a") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#c51b8a") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## ≥ 1Mb eQTL-eGenes interactions
+tiff("Anx_eGenes_correlation_analysis_more1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(Anx_data, aes(x=Sample_size, y=more1Mb)) + 
+  geom_point(size = 2.5, color="#c51b8a") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#c51b8a") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## interchromosomal eQTL-eGenes interactions
+tiff("Anx_eGenes_correlation_analysis_interchrom_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(Anx_data, aes(x=Sample_size, y=interchrom)) + 
+  geom_point(size = 2.5, color="#c51b8a") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#c51b8a") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+### BD
+## < 1Mb eQTL-eGenes interactions
+tiff("BD_eGenes_correlation_analysis_less1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(BD_data, aes(x=Sample_size, y=less1Mb)) + 
+  geom_point(size = 2.5, color="#3182bd") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#3182bd") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## ≥ 1Mb eQTL-eGenes interactions
+tiff("BD_eGenes_correlation_analysis_more1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(BD_data, aes(x=Sample_size, y=more1Mb)) + 
+  geom_point(size = 2.5, color="#3182bd") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#3182bd") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## interchromosomal eQTL-eGenes interactions
+tiff("BD_eGenes_correlation_analysis_interchrom_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(BD_data, aes(x=Sample_size, y=interchrom)) + 
+  geom_point(size = 2.5, color="#3182bd") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#3182bd") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+### UD
+## < 1Mb eQTL-eGenes interactions
+tiff("UD_eGenes_correlation_analysis_less1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(UD_data, aes(x=Sample_size, y=less1Mb)) + 
+  geom_point(size = 2.5, color="#ec7014") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#ec7014") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## ≥ 1Mb eQTL-eGenes interactions
+tiff("UD_eGenes_correlation_analysis_more1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(UD_data, aes(x=Sample_size, y=more1Mb)) + 
+  geom_point(size = 2.5, color="#ec7014") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#ec7014") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## interchromosomal eQTL-eGenes interactions
+tiff("UD_eGenes_correlation_analysis_interchrom_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(UD_data, aes(x=Sample_size, y=interchrom)) + 
+  geom_point(size = 2.5, color="#ec7014") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#ec7014") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+### SCZ
+## < 1Mb eQTL-eGenes interactions
+tiff("SCZ_eGenes_correlation_analysis_less1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(SCZ_data, aes(x=Sample_size, y=less1Mb)) + 
+  geom_point(size = 2.5, color="#238443") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#238443") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## ≥ 1Mb eQTL-eGenes interactions
+tiff("SCZ_eGenes_correlation_analysis_more1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(SCZ_data, aes(x=Sample_size, y=more1Mb)) + 
+  geom_point(size = 2.5, color="#238443") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#238443") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## interchromosomal eQTL-eGenes interactions
+tiff("SCZ_eGenes_correlation_analysis_interchrom_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(SCZ_data, aes(x=Sample_size, y=interchrom)) + 
+  geom_point(size = 2.5, color="#238443") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#238443") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+### Cognition
+## < 1Mb eQTL-eGenes interactions
+tiff("Cognition_eGenes_correlation_analysis_less1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(Cognition_data, aes(x=Sample_size, y=less1Mb)) + 
+  geom_point(size = 2.5, color="#fec44f") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#fec44f") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## ≥ 1Mb eQTL-eGenes interactions
+tiff("Cognition_eGenes_correlation_analysis_more1Mb_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(Cognition_data, aes(x=Sample_size, y=more1Mb)) + 
+  geom_point(size = 2.5, color="#fec44f") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#fec44f") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+
+## interchromosomal eQTL-eGenes interactions
+tiff("Cognition_eGenes_correlation_analysis_interchrom_with_line.tiff", units="in", width=6, height=6, res=300)
+ggplot(Cognition_data, aes(x=Sample_size, y=interchrom)) + 
+  geom_point(size = 2.5, color="#fec44f") + 
+  geom_smooth(method=lm, se=T, linetype="solid", size=0.4, color="#fec44f") +
+  # geom_text(aes(label=Tissue), size=1.8, color="black") +
+  theme_classic() + 
+  scale_x_continuous(name="Sample size") + # Number of samples in GTEx tissues
+  scale_y_continuous(name="Number of eQTL-eGene interactions") +
+  theme(plot.title = element_blank(),
+        legend.position = "none",
+        # legend.title = element_text(size=18),
+        # legend.text = element_text(size=17),
+        axis.text=element_text(size=19, color = "black"),
+        axis.title=element_text(size=20, color = "black")) +
+  stat_cor(method = "pearson", size=8)
+  # stat_cor(method = "spearman", size=8)
+dev.off()
+```

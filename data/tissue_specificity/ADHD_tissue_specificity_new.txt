@@ -1,0 +1,145 @@
+Phenotype	System	New_tissue	Tissue	Number	Interactions	Total	Percentage
+ADHD	Body fat	Adipose - Subcutaneous	Adipose_Subcutaneous	42	< 1Mb	47	89,36
+ADHD	Body fat	Adipose - Subcutaneous	Adipose_Subcutaneous	5	>= 1Mb	47	10,64
+ADHD	Body fat	Adipose - Subcutaneous	Adipose_Subcutaneous	0	inter-chrom	47	0,00
+ADHD	Body fat	Adipose - Visceral (Omentum)	Adipose_Visceral_Omentum	29	< 1Mb	33	87,88
+ADHD	Body fat	Adipose - Visceral (Omentum)	Adipose_Visceral_Omentum	4	>= 1Mb	33	12,12
+ADHD	Body fat	Adipose - Visceral (Omentum)	Adipose_Visceral_Omentum	0	inter-chrom	33	0,00
+ADHD	Endocrine system	Adrenal Gland	Adrenal_Gland	14	< 1Mb	15	93,33
+ADHD	Endocrine system	Adrenal Gland	Adrenal_Gland	1	>= 1Mb	15	6,67
+ADHD	Endocrine system	Adrenal Gland	Adrenal_Gland	0	inter-chrom	15	0,00
+ADHD	Circulatory system	Artery - Aorta	Artery_Aorta	37	< 1Mb	44	84,09
+ADHD	Circulatory system	Artery - Aorta	Artery_Aorta	3	>= 1Mb	44	6,82
+ADHD	Circulatory system	Artery - Aorta	Artery_Aorta	4	inter-chrom	44	9,09
+ADHD	Circulatory system	Artery - Coronary	Artery_Coronary	12	< 1Mb	13	92,31
+ADHD	Circulatory system	Artery - Coronary	Artery_Coronary	0	>= 1Mb	13	0,00
+ADHD	Circulatory system	Artery - Coronary	Artery_Coronary	1	inter-chrom	13	7,69
+ADHD	Circulatory system	Artery - Tibial	Artery_Tibial	49	< 1Mb	56	87,50
+ADHD	Circulatory system	Artery - Tibial	Artery_Tibial	5	>= 1Mb	56	8,93
+ADHD	Circulatory system	Artery - Tibial	Artery_Tibial	2	inter-chrom	56	3,57
+ADHD	Nervous System	Brain - Amygdala	Brain_Amygdala	4	< 1Mb	8	50,00
+ADHD	Nervous System	Brain - Amygdala	Brain_Amygdala	3	>= 1Mb	8	37,50
+ADHD	Nervous System	Brain - Amygdala	Brain_Amygdala	1	inter-chrom	8	12,50
+ADHD	Nervous System	Brain - Anterior cingulate cortex (BA24)	Brain_Anterior_cingulate_cortex_BA24	2	< 1Mb	3	66,67
+ADHD	Nervous System	Brain - Anterior cingulate cortex (BA24)	Brain_Anterior_cingulate_cortex_BA24	0	>= 1Mb	3	0,00
+ADHD	Nervous System	Brain - Anterior cingulate cortex (BA24)	Brain_Anterior_cingulate_cortex_BA24	1	inter-chrom	3	33,33
+ADHD	Nervous System	Brain - Caudate (basal ganglia)	Brain_Caudate_basal_ganglia	6	< 1Mb	7	85,71
+ADHD	Nervous System	Brain - Caudate (basal ganglia)	Brain_Caudate_basal_ganglia	1	>= 1Mb	7	14,29
+ADHD	Nervous System	Brain - Caudate (basal ganglia)	Brain_Caudate_basal_ganglia	0	inter-chrom	7	0,00
+ADHD	Nervous System	Brain - Cerebellar Hemisphere	Brain_Cerebellar_Hemisphere	12	< 1Mb	19	63,16
+ADHD	Nervous System	Brain - Cerebellar Hemisphere	Brain_Cerebellar_Hemisphere	7	>= 1Mb	19	36,84
+ADHD	Nervous System	Brain - Cerebellar Hemisphere	Brain_Cerebellar_Hemisphere	0	inter-chrom	19	0,00
+ADHD	Nervous System	Brain - Cerebellum	Brain_Cerebellum	24	< 1Mb	34	70,59
+ADHD	Nervous System	Brain - Cerebellum	Brain_Cerebellum	8	>= 1Mb	34	23,53
+ADHD	Nervous System	Brain - Cerebellum	Brain_Cerebellum	2	inter-chrom	34	5,88
+ADHD	Nervous System	Brain - Cortex	Brain_Cortex	10	< 1Mb	16	62,50
+ADHD	Nervous System	Brain - Cortex	Brain_Cortex	2	>= 1Mb	16	12,50
+ADHD	Nervous System	Brain - Cortex	Brain_Cortex	4	inter-chrom	16	25,00
+ADHD	Nervous System	Brain - Frontal Cortex (BA9)	Brain_Frontal_Cortex_BA9	5	< 1Mb	10	50,00
+ADHD	Nervous System	Brain - Frontal Cortex (BA9)	Brain_Frontal_Cortex_BA9	3	>= 1Mb	10	30,00
+ADHD	Nervous System	Brain - Frontal Cortex (BA9)	Brain_Frontal_Cortex_BA9	2	inter-chrom	10	20,00
+ADHD	Nervous System	Brain - Hippocampus	Brain_Hippocampus	8	< 1Mb	9	88,89
+ADHD	Nervous System	Brain - Hippocampus	Brain_Hippocampus	0	>= 1Mb	9	0,00
+ADHD	Nervous System	Brain - Hippocampus	Brain_Hippocampus	1	inter-chrom	9	11,11
+ADHD	Nervous System	Brain - Hypothalamus	Brain_Hypothalamus	4	< 1Mb	6	66,67
+ADHD	Nervous System	Brain - Hypothalamus	Brain_Hypothalamus	2	>= 1Mb	6	33,33
+ADHD	Nervous System	Brain - Hypothalamus	Brain_Hypothalamus	0	inter-chrom	6	0,00
+ADHD	Nervous System	Brain - Nucleus accumbens (basal ganglia)	Brain_Nucleus_accumbens_basal_ganglia	4	< 1Mb	6	66,67
+ADHD	Nervous System	Brain - Nucleus accumbens (basal ganglia)	Brain_Nucleus_accumbens_basal_ganglia	1	>= 1Mb	6	16,67
+ADHD	Nervous System	Brain - Nucleus accumbens (basal ganglia)	Brain_Nucleus_accumbens_basal_ganglia	1	inter-chrom	6	16,67
+ADHD	Nervous System	Brain - Putamen (basal ganglia)	Brain_Putamen_basal_ganglia	4	< 1Mb	4	100,00
+ADHD	Nervous System	Brain - Putamen (basal ganglia)	Brain_Putamen_basal_ganglia	0	>= 1Mb	4	0,00
+ADHD	Nervous System	Brain - Putamen (basal ganglia)	Brain_Putamen_basal_ganglia	0	inter-chrom	4	0,00
+ADHD	Nervous System	Brain - Spinal cord (cervical c-1)	Brain_Spinal_cord_cervical_c-1	0	< 1Mb	1	0,00
+ADHD	Nervous System	Brain - Spinal cord (cervical c-1)	Brain_Spinal_cord_cervical_c-1	1	>= 1Mb	1	100,00
+ADHD	Nervous System	Brain - Spinal cord (cervical c-1)	Brain_Spinal_cord_cervical_c-1	0	inter-chrom	1	0,00
+ADHD	Nervous System	Brain - Substantia nigra	Brain_Substantia_nigra	2	< 1Mb	2	100,00
+ADHD	Nervous System	Brain - Substantia nigra	Brain_Substantia_nigra	0	>= 1Mb	2	0,00
+ADHD	Nervous System	Brain - Substantia nigra	Brain_Substantia_nigra	0	inter-chrom	2	0,00
+ADHD	Exocrine system	Breast - Mammary Tissue	Breast_Mammary_Tissue	27	< 1Mb	33	81,82
+ADHD	Exocrine system	Breast - Mammary Tissue	Breast_Mammary_Tissue	2	>= 1Mb	33	6,06
+ADHD	Exocrine system	Breast - Mammary Tissue	Breast_Mammary_Tissue	4	inter-chrom	33	12,12
+ADHD	Transformed cells	Cells - EBV-transformed lymphocytes	Cells_EBV-transformed_lymphocytes	6	< 1Mb	8	75,00
+ADHD	Transformed cells	Cells - EBV-transformed lymphocytes	Cells_EBV-transformed_lymphocytes	2	>= 1Mb	8	25,00
+ADHD	Transformed cells	Cells - EBV-transformed lymphocytes	Cells_EBV-transformed_lymphocytes	0	inter-chrom	8	0,00
+ADHD	Transformed cells	Cells - Transformed fibroblasts	Cells_Transformed_fibroblasts	38	< 1Mb	47	80,85
+ADHD	Transformed cells	Cells - Transformed fibroblasts	Cells_Transformed_fibroblasts	6	>= 1Mb	47	12,77
+ADHD	Transformed cells	Cells - Transformed fibroblasts	Cells_Transformed_fibroblasts	3	inter-chrom	47	6,38
+ADHD	Digestive system	Colon - Sigmoid	Colon_Sigmoid	20	< 1Mb	22	90,91
+ADHD	Digestive system	Colon - Sigmoid	Colon_Sigmoid	2	>= 1Mb	22	9,09
+ADHD	Digestive system	Colon - Sigmoid	Colon_Sigmoid	0	inter-chrom	22	0,00
+ADHD	Digestive system	Colon - Transverse	Colon_Transverse	26	< 1Mb	32	81,25
+ADHD	Digestive system	Colon - Transverse	Colon_Transverse	4	>= 1Mb	32	12,50
+ADHD	Digestive system	Colon - Transverse	Colon_Transverse	2	inter-chrom	32	6,25
+ADHD	Digestive system	Esophagus - Gastroesophageal Junction	Esophagus_Gastroesophageal_Junction	20	< 1Mb	23	86,96
+ADHD	Digestive system	Esophagus - Gastroesophageal Junction	Esophagus_Gastroesophageal_Junction	3	>= 1Mb	23	13,04
+ADHD	Digestive system	Esophagus - Gastroesophageal Junction	Esophagus_Gastroesophageal_Junction	0	inter-chrom	23	0,00
+ADHD	Digestive system	Esophagus - Mucosa	Esophagus_Mucosa	34	< 1Mb	39	87,18
+ADHD	Digestive system	Esophagus - Mucosa	Esophagus_Mucosa	4	>= 1Mb	39	10,26
+ADHD	Digestive system	Esophagus - Mucosa	Esophagus_Mucosa	1	inter-chrom	39	2,56
+ADHD	Digestive system	Esophagus - Muscularis	Esophagus_Muscularis	35	< 1Mb	42	83,33
+ADHD	Digestive system	Esophagus - Muscularis	Esophagus_Muscularis	6	>= 1Mb	42	14,29
+ADHD	Digestive system	Esophagus - Muscularis	Esophagus_Muscularis	1	inter-chrom	42	2,38
+ADHD	Circulatory system	Heart - Atrial Appendage	Heart_Atrial_Appendage	28	< 1Mb	32	87,50
+ADHD	Circulatory system	Heart - Atrial Appendage	Heart_Atrial_Appendage	2	>= 1Mb	32	6,25
+ADHD	Circulatory system	Heart - Atrial Appendage	Heart_Atrial_Appendage	2	inter-chrom	32	6,25
+ADHD	Circulatory system	Heart - Left Ventricle	Heart_Left_Ventricle	16	< 1Mb	20	80,00
+ADHD	Circulatory system	Heart - Left Ventricle	Heart_Left_Ventricle	2	>= 1Mb	20	10,00
+ADHD	Circulatory system	Heart - Left Ventricle	Heart_Left_Ventricle	2	inter-chrom	20	10,00
+ADHD	Digestive system	Liver	Liver	10	< 1Mb	14	71,43
+ADHD	Digestive system	Liver	Liver	4	>= 1Mb	14	28,57
+ADHD	Digestive system	Liver	Liver	0	inter-chrom	14	0,00
+ADHD	Respiratory system	Lung	Lung	52	< 1Mb	58	89,66
+ADHD	Respiratory system	Lung	Lung	6	>= 1Mb	58	10,34
+ADHD	Respiratory system	Lung	Lung	0	inter-chrom	58	0,00
+ADHD	Exocrine system	Minor Salivary Gland	Minor_Salivary_Gland	4	< 1Mb	4	100,00
+ADHD	Exocrine system	Minor Salivary Gland	Minor_Salivary_Gland	0	>= 1Mb	4	0,00
+ADHD	Exocrine system	Minor Salivary Gland	Minor_Salivary_Gland	0	inter-chrom	4	0,00
+ADHD	Muscular system	Muscle - Skeletal	Muscle_Skeletal	29	< 1Mb	41	70,73
+ADHD	Muscular system	Muscle - Skeletal	Muscle_Skeletal	10	>= 1Mb	41	24,39
+ADHD	Muscular system	Muscle - Skeletal	Muscle_Skeletal	2	inter-chrom	41	4,88
+ADHD	Nervous System	Nerve - Tibial	Nerve_Tibial	55	< 1Mb	60	91,67
+ADHD	Nervous System	Nerve - Tibial	Nerve_Tibial	5	>= 1Mb	60	8,33
+ADHD	Nervous System	Nerve - Tibial	Nerve_Tibial	0	inter-chrom	60	0,00
+ADHD	Reproductive system	Ovary	Ovary	4	< 1Mb	7	57,14
+ADHD	Reproductive system	Ovary	Ovary	2	>= 1Mb	7	28,57
+ADHD	Reproductive system	Ovary	Ovary	1	inter-chrom	7	14,29
+ADHD	Endocrine system	Pancreas	Pancreas	27	< 1Mb	34	79,41
+ADHD	Endocrine system	Pancreas	Pancreas	3	>= 1Mb	34	8,82
+ADHD	Endocrine system	Pancreas	Pancreas	4	inter-chrom	34	11,76
+ADHD	Endocrine system	Pituitary	Pituitary	16	< 1Mb	18	88,89
+ADHD	Endocrine system	Pituitary	Pituitary	2	>= 1Mb	18	11,11
+ADHD	Endocrine system	Pituitary	Pituitary	0	inter-chrom	18	0,00
+ADHD	Reproductive system	Prostate	Prostate	6	< 1Mb	7	85,71
+ADHD	Reproductive system	Prostate	Prostate	0	>= 1Mb	7	0,00
+ADHD	Reproductive system	Prostate	Prostate	1	inter-chrom	7	14,29
+ADHD	Exocrine system	Skin - Not Sun Exposed (Suprapubic)	Skin_Not_Sun_Exposed_Suprapubic	33	< 1Mb	42	78,57
+ADHD	Exocrine system	Skin - Not Sun Exposed (Suprapubic)	Skin_Not_Sun_Exposed_Suprapubic	7	>= 1Mb	42	16,67
+ADHD	Exocrine system	Skin - Not Sun Exposed (Suprapubic)	Skin_Not_Sun_Exposed_Suprapubic	2	inter-chrom	42	4,76
+ADHD	Exocrine system	Skin - Sun Exposed (Lower leg)	Skin_Sun_Exposed_Lower_leg	46	< 1Mb	52	88,46
+ADHD	Exocrine system	Skin - Sun Exposed (Lower leg)	Skin_Sun_Exposed_Lower_leg	6	>= 1Mb	52	11,54
+ADHD	Exocrine system	Skin - Sun Exposed (Lower leg)	Skin_Sun_Exposed_Lower_leg	0	inter-chrom	52	0,00
+ADHD	Digestive system	Small Intestine - Terminal Ileum	Small_Intestine_Terminal_Ileum	8	< 1Mb	12	66,67
+ADHD	Digestive system	Small Intestine - Terminal Ileum	Small_Intestine_Terminal_Ileum	3	>= 1Mb	12	25,00
+ADHD	Digestive system	Small Intestine - Terminal Ileum	Small_Intestine_Terminal_Ileum	1	inter-chrom	12	8,33
+ADHD	Lymphatic system	Spleen	Spleen	12	< 1Mb	15	80,00
+ADHD	Lymphatic system	Spleen	Spleen	1	>= 1Mb	15	6,67
+ADHD	Lymphatic system	Spleen	Spleen	2	inter-chrom	15	13,33
+ADHD	Digestive system	Stomach	Stomach	18	< 1Mb	23	78,26
+ADHD	Digestive system	Stomach	Stomach	5	>= 1Mb	23	21,74
+ADHD	Digestive system	Stomach	Stomach	0	inter-chrom	23	0,00
+ADHD	Reproductive system	Testis	Testis	34	< 1Mb	46	73,91
+ADHD	Reproductive system	Testis	Testis	11	>= 1Mb	46	23,91
+ADHD	Reproductive system	Testis	Testis	1	inter-chrom	46	2,17
+ADHD	Endocrine system	Thyroid	Thyroid	60	< 1Mb	77	77,92
+ADHD	Endocrine system	Thyroid	Thyroid	16	>= 1Mb	77	20,78
+ADHD	Endocrine system	Thyroid	Thyroid	1	inter-chrom	77	1,30
+ADHD	Reproductive system	Uterus	Uterus	2	< 1Mb	4	50,00
+ADHD	Reproductive system	Uterus	Uterus	2	>= 1Mb	4	50,00
+ADHD	Reproductive system	Uterus	Uterus	0	inter-chrom	4	0,00
+ADHD	Reproductive system	Vagina	Vagina	1	< 1Mb	4	25,00
+ADHD	Reproductive system	Vagina	Vagina	2	>= 1Mb	4	50,00
+ADHD	Reproductive system	Vagina	Vagina	1	inter-chrom	4	25,00
+ADHD	Circulatory system	Whole Blood	Whole_Blood	30	< 1Mb	36	83,33
+ADHD	Circulatory system	Whole Blood	Whole_Blood	5	>= 1Mb	36	13,89
+ADHD	Circulatory system	Whole Blood	Whole_Blood	1	inter-chrom	36	2,78

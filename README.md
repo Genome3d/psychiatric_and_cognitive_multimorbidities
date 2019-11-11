@@ -1,7 +1,7 @@
 # psychiatric_and_cognitive_multimorbidities
 This repository contains the data analysis and visualisation scripts for the
 study, [*Decoding the multimorbidities among psychiatric disorders and
-cognitive functioning*].
+cognitive functioning*](https://www.biorxiv.org/content/10.1101/837914v1).
 
 In this study we performed an integrated analysis of 2,893 GWAS SNPs
 (associated with cognition, ADHD, anxiety, bipolar disorder, unipolar

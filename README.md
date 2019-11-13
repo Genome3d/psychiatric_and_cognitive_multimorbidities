@@ -3,8 +3,6 @@ This repository contains the data analysis and visualisation scripts for the
 study [*Decoding the multimorbidities among psychiatric disorders and
 cognitive functioning*](https://www.biorxiv.org/content/10.1101/837914v1).
 
-![multimorbidity model] (pics/genetic_model_multimorbidity.png?raw=true "multimorbidity model")
-
 In this study we performed an integrated analysis of 2,893 GWAS SNPs
 (associated with cognition, ADHD, anxiety, bipolar disorder, unipolar
 depression and schizophrenia) with data on the 3D genome organization and eQTLs

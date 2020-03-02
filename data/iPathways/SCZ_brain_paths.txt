@@ -1,0 +1,70 @@
+Human T-cell leukemia virus 1 infection
+Antigen processing and presentation
+Epstein-Barr virus infection
+Neuroactive ligand-receptor interaction
+Staphylococcus aureus infection
+Tuberculosis
+Systemic lupus erythematosus
+Th1 and Th2 cell differentiation
+Axon guidance
+Cholinergic synapse
+Cushing syndrome
+Human immunodeficiency virus 1 infection
+Type II diabetes mellitus
+Human cytomegalovirus infection
+Endocrine resistance
+Sphingolipid signaling pathway
+Chemokine signaling pathway
+Autophagy - animal
+Cellular senescence
+Focal adhesion
+Natural killer cell mediated cytotoxicity
+Fc gamma R-mediated phagocytosis
+Regulation of actin cytoskeleton
+Cortisol synthesis and secretion
+cAMP signaling pathway
+Complement and coagulation cascades
+Pathways in cancer
+Ras signaling pathway
+GnRH signaling pathway
+C-type lectin receptor signaling pathway
+Rap1 signaling pathway
+Vascular smooth muscle contraction
+Platelet activation
+Leukocyte transendothelial migration
+Neurotrophin signaling pathway
+Insulin signaling pathway
+Estrogen signaling pathway
+Insulin resistance
+AGE-RAGE signaling pathway in diabetic complications
+Mitophagy - animal
+Apoptosis
+Hippo signaling pathway
+Bacterial invasion of epithelial cells
+Proteoglycans in cancer
+Small cell lung cancer
+Tight junction
+NOD-like receptor signaling pathway
+Hepatitis B
+HIF-1 signaling pathway
+Platinum drug resistance
+Cell cycle
+VEGF signaling pathway
+JAK-STAT signaling pathway
+Fc epsilon RI signaling pathway
+Thyroid hormone signaling pathway
+Toll-like receptor signaling pathway
+Regulation of lipolysis in adipocytes
+Non-alcoholic fatty liver disease (NAFLD)
+mTOR signaling pathway
+Osteoclast differentiation
+Relaxin signaling pathway
+Pertussis
+Chagas disease (American trypanosomiasis)
+Colorectal cancer
+Prostate cancer
+Melanoma
+Non-small cell lung cancer
+Central carbon metabolism in cancer
+Choline metabolism in cancer
+Fluid shear stress and atherosclerosis
